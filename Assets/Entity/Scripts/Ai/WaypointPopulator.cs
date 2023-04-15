@@ -15,7 +15,7 @@ namespace Entity.Scripts.Ai
 
             foreach (var target in test)
             {
-                _WaypointsDefinition.WaypointConfigs.Add(new WaypointConfig("",target.transform.position,1, 1, -1));
+                _WaypointsDefinition.WaypointConfigs.Add(new WaypointConfig("",target.transform.position,1, 1, -1, target.transform));
             }
         }
 
