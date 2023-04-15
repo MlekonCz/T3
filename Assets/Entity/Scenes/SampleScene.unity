@@ -1708,8 +1708,8 @@ PolygonCollider2D:
       - {x: -37.1476, y: 5.1212845}
       - {x: -33.951042, y: 5.0905457}
       - {x: -33.91521, y: 5.6241455}
-      - {x: -37.07224, y: 5.5889626}
-      - {x: -37.103752, y: 8.4012375}
+      - {x: -35.124577, y: 5.6741066}
+      - {x: -34.97516, y: 8.305454}
       - {x: -32.40796, y: 8.344666}
       - {x: -32.397972, y: 8.849869}
       - {x: -33.425213, y: 8.9673}
@@ -1748,8 +1748,12 @@ PolygonCollider2D:
       - {x: -12.163028, y: 16.126095}
       - {x: -12.671585, y: 16.11827}
       - {x: -12.663486, y: 15.555191}
-      - {x: -17.628492, y: 15.493549}
-      - {x: -17.588257, y: 20.311626}
+      - {x: -16.431963, y: 15.69297}
+      - {x: -16.423792, y: 16.905773}
+      - {x: -16.473768, y: 17.511967}
+      - {x: -16.498516, y: 18.38535}
+      - {x: -13.8241005, y: 18.912422}
+      - {x: -13.738604, y: 20.312687}
       - {x: -12.705512, y: 20.312973}
       - {x: -12.655028, y: 18.50467}
       - {x: -12.17581, y: 18.47108}
@@ -1763,15 +1767,17 @@ PolygonCollider2D:
       - {x: -3.6414988, y: 20.279083}
       - {x: -3.592425, y: 16.144974}
       - {x: -3.0945685, y: 16.1423}
-      - {x: -3.069085, y: 20.267105}
-      - {x: 2.9016356, y: 20.301388}
+      - {x: -3.0216115, y: 16.912308}
+      - {x: -0.7911639, y: 16.825222}
+      - {x: 1.2441318, y: 17.276028}
+      - {x: 2.9332848, y: 17.43715}
       - {x: 2.9252799, y: 16.968388}
       - {x: 3.447167, y: 16.995468}
       - {x: 3.3907015, y: 20.242908}
       - {x: 6.1858873, y: 20.267643}
       - {x: 6.2095914, y: 12.481239}
-      - {x: 3.1477845, y: 12.475563}
-      - {x: 3.0479681, y: 14.048229}
+      - {x: 6.223922, y: 14.105919}
+      - {x: 5.10898, y: 14.12513}
       - {x: -0.35299277, y: 13.90966}
       - {x: -0.41760516, y: 12.468952}
       - {x: -3.0650175, y: 12.436298}
@@ -1908,7 +1914,7 @@ PolygonCollider2D:
       - {x: -8.460246, y: 1.8433495}
       - {x: -8.540818, y: -9.21019}
       - {x: -13.409731, y: -9.282143}
-      - {x: -13.369581, y: -11.562933}
+      - {x: -13.467508, y: -11.445421}
       - {x: -15.913474, y: -11.46859}
       - {x: -16.428766, y: -11.465346}
       - {x: -16.432707, y: -11.949622}
@@ -2014,10 +2020,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &379486860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,10 +2117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 0
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &382473553
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,10 +3137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70bd44a44cd62c64fbfc1eea95b24880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_OverrideByGrid: 0
-  m_UseMeshPrefab: {fileID: 0}
-  m_CompressBounds: 0
-  m_OverrideVector: {x: 1, y: 1, z: 1}
 --- !u!114 &591813603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3155,24 +3149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04976799df50f54ba128eff723155a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AgentTypeID: 0
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGeometry: 0
-  m_DefaultArea: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.033333335
-  m_BuildHeightMesh: 0
-  m_HideEditorLogs: 0
-  m_NavMeshData: {fileID: 23800000, guid: 8af46bb2a648f2d4c9cf417d1c18eafc, type: 2}
 --- !u!1 &598787610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3851,6 +3827,18 @@ PrefabInstance:
     - target: {fileID: 8739248370690664834, guid: 1d6da1391e2ca9043a4e168959f51b26, type: 3}
       propertyPath: m_Name
       value: Item 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739248370690664844, guid: 1d6da1391e2ca9043a4e168959f51b26, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739248370690664844, guid: 1d6da1391e2ca9043a4e168959f51b26, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739248370690664844, guid: 1d6da1391e2ca9043a4e168959f51b26, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 5.12
       objectReference: {fileID: 0}
     - target: {fileID: 8739248370690664846, guid: 1d6da1391e2ca9043a4e168959f51b26, type: 3}
       propertyPath: m_RootOrder
@@ -5430,6 +5418,18 @@ PrefabInstance:
     - target: {fileID: 8739248370690664834, guid: ea858b60ab8a8ff4f98191348495a9eb, type: 3}
       propertyPath: m_Name
       value: Item 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739248370690664844, guid: ea858b60ab8a8ff4f98191348495a9eb, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739248370690664844, guid: ea858b60ab8a8ff4f98191348495a9eb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739248370690664844, guid: ea858b60ab8a8ff4f98191348495a9eb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 5.12
       objectReference: {fileID: 0}
     - target: {fileID: 8739248370690664846, guid: ea858b60ab8a8ff4f98191348495a9eb, type: 3}
       propertyPath: m_RootOrder
