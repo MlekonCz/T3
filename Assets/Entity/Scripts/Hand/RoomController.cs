@@ -27,7 +27,7 @@ namespace Entity.Scripts.Hand
         private void OnTriggerEnter2D(Collider2D col)
         {
             Debug.Log("Hand entered the room");
-            if (col.gameObject != _HandController.gameObject) return;
+            if (!col.gameObject.CompareTag(TagManager.PLAYER)) return;
 
             Game.Instance.PlayerManager.SetSign(_HandController.Pickable != null, Signs.FeedSign);
                 
@@ -37,7 +37,7 @@ namespace Entity.Scripts.Hand
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (!other.gameObject.CompareTag(StringManager.PLAYER)) return;
+            if (!other.gameObject.CompareTag(TagManager.PLAYER)) return;
 
             Game.Instance.PlayerManager.SetSign(false, Signs.FeedSign);
                 

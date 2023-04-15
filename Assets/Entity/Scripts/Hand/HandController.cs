@@ -9,7 +9,7 @@ namespace Entity.Scripts.Hand
 
         [SerializeField] private float _MovementSpeed = 150f;
         [SerializeField] private float _RotationSpeed = 75f;
-
+        
         [SerializeField] private Rigidbody2D _Rigidbody2D;
 
         [SerializeField] private Animator _Animator;
@@ -28,16 +28,18 @@ namespace Entity.Scripts.Hand
         
         public IPickable Pickable;
 
+        private float _multipliedSpeed;
+        private float _multipliedRotation;
 
         private void Start()
         {
             
         }
 
-        public void Initialize(HandSpeedUpgrade handSpeedUpgrade)
+        public void SetModifiers(HandSpeedUpgrade handSpeedUpgrade)
         {
-            _MovementSpeed *= handSpeedUpgrade.Modifier;
-            _RotationSpeed *= handSpeedUpgrade.Modifier;
+            _multipliedSpeed = _MovementSpeed * handSpeedUpgrade.Modifier;
+            _multipliedRotation = _RotationSpeed * handSpeedUpgrade.Modifier;
         }
         
         private void Update()

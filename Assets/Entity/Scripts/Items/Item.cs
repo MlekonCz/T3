@@ -46,7 +46,7 @@ namespace Entity.Scripts.Items
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (col.gameObject.CompareTag(StringManager.PLAYER))
+            if (col.gameObject.CompareTag(TagManager.PLAYER))
             {
                 Game.Instance.PlayerManager.SetItemInRange(_ItemTierDefinition, true, _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
             }
@@ -54,7 +54,7 @@ namespace Entity.Scripts.Items
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (other.gameObject.CompareTag(StringManager.PLAYER))
+            if (other.gameObject.CompareTag(TagManager.PLAYER))
             {
                 Game.Instance.PlayerManager.SetItemInRange(_ItemTierDefinition, false,  _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
             }

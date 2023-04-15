@@ -86,7 +86,8 @@
       <updated>1681498447196</updated>
       <workItem from="1681498568428" duration="15131000" />
       <workItem from="1681548630533" duration="14276000" />
-      <workItem from="1681575164670" duration="16518000" />
+      <workItem from="1681575164670" duration="17308000" />
+      <workItem from="1681596165546" duration="1735000" />
     </task>
     <servers />
   </component>
@@ -109,6 +110,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Hand/PlayerManager.cs</url>
+          <line>81</line>
+          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Hand\PlayerManager.cs" initialLine="76" containingFunctionPresentation="method 'UpgradePurchased'">
+            <startOffsets>
+              <option value="2459" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2460" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

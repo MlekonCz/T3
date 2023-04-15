@@ -23,13 +23,18 @@ namespace Entity.Scripts.Hand
 
         private void Awake()
         {
+            UpdateCurrentUpgrades();
+
+
+            SetHand();
+        }
+
+        private void UpdateCurrentUpgrades()
+        {
+            _currentUpgrades.Clear();
             _currentUpgrades.Add(_HandPowerUpgrade[_upgradeLevel]);
             _currentUpgrades.Add(_HandSpeedUpgrade[_upgradeLevel]);
             _currentUpgrades.Add(_HandVisionUpgrade[_upgradeLevel]);
-            
-            
-            
-            SetHand();
         }
 
         private void SetHand()
@@ -38,7 +43,7 @@ namespace Entity.Scripts.Hand
             {
                 if (upgrade is HandSpeedUpgrade speedUpgrade)
                 {
-                    _HandController.Initialize(speedUpgrade);
+                    _HandController.SetModifiers(speedUpgrade);
                 }
             }
         }
@@ -71,8 +76,13 @@ namespace Entity.Scripts.Hand
 
             return currentUpgrades;
         }
-        
-        
 
+
+        public void UpgradePurchased()
+        {
+            _upgradeLevel++;
+            UpdateCurrentUpgrades();
+            SetHand();
+        }
     }
 }

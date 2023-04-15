@@ -8,6 +8,7 @@ namespace Entity.Scripts.Core
 
         private int _playerScore;
 
+        public int LifetimeScore;
 
 
 
@@ -25,6 +26,7 @@ namespace Entity.Scripts.Core
         public void AddScore(int value)
         {
             _playerScore += value;
+            LifetimeScore += value;
             Debug.Log(_playerScore);
         }
 
