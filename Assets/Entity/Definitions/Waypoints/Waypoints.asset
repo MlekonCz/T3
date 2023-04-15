@@ -51,10 +51,10 @@ MonoBehaviour:
       Data: 1
     - Name: Duration
       Entry: 4
-      Data: 1
+      Data: 0
     - Name: DayTime
       Entry: 3
-      Data: -1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -72,13 +72,13 @@ MonoBehaviour:
       Data: 3|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
     - Name: Weight
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: Duration
       Entry: 4
-      Data: 1
+      Data: 0
     - Name: DayTime
       Entry: 3
-      Data: -1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 

@@ -1,18 +1,24 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NpcManager : MonoBehaviour
+namespace Entity.Scripts.Ai
 {
-    // Start is called before the first frame update
-    void Start()
+    public class NpcManager : MonoBehaviour
     {
-        
-    }
+        [SerializeField] private WaypointsDefinition _WaypointsDefinition;
+        //public WaypointsDefinition WaypointsDefinition => _WaypointsDefinition;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    
+    
+
+        public Transform GetWaypoint(Dictionary<Transform, WaypointConfig> waypointsByWeight)
+        {
+
+
+
+
+            return null;
+
+        }
     }
 }

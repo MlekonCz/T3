@@ -11,6 +11,12 @@ namespace Entity.Scripts.Hand
 
         [SerializeField] private Rigidbody2D _Rigidbody2D;
 
+        [SerializeField] private Animator _Animator;
+
+        private const string IS_WALKING = "IsWalking";
+        private static readonly int IsWalking = Animator.StringToHash(IS_WALKING);
+
+        private Vector2 _movement;
         private bool _isPickableInRange;
 
         private IPickable _pickableInRange;
@@ -31,7 +37,8 @@ namespace Entity.Scripts.Hand
             }
         }
 
-        private Vector2 _movement;
+      
+
         private void UpdateMovement()
         {
             float moveHorizontal = Input.GetAxis ("Horizontal");
@@ -39,6 +46,8 @@ namespace Entity.Scripts.Hand
  
             transform.Rotate(0,0,-moveHorizontal * _RotationSpeed * Time.deltaTime);
             _movement = new Vector2(moveVertical,0 ).normalized;
+            
+            _Animator.SetBool(IsWalking,_movement.magnitude != 0);
         }
         void FixedUpdate()
         {
