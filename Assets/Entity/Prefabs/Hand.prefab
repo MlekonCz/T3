@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _MovementSpeed: 150
+  _RotationSpeed: 75
   _Rigidbody2D: {fileID: 81211869297520160}
 --- !u!70 &81211869297520161
 CapsuleCollider2D:

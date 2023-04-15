@@ -6,7 +6,8 @@ namespace Entity.Scripts.Hand
     public class HandController : MonoBehaviour
     {
 
-        [SerializeField] private float _MovementSpeed;
+        [SerializeField] private float _MovementSpeed = 150f;
+        [SerializeField] private float _RotationSpeed = 75f;
 
         [SerializeField] private Rigidbody2D _Rigidbody2D;
 
@@ -17,7 +18,6 @@ namespace Entity.Scripts.Hand
         public IPickable Pickable;
         private void Update()
         {
-            UpdateRotation();
             UpdateMovement();
             CheckForPickingItemUp();
         }
@@ -37,17 +37,15 @@ namespace Entity.Scripts.Hand
             float moveHorizontal = Input.GetAxis ("Horizontal");
             float moveVertical = Input.GetAxis ("Vertical");
  
-            _movement = new Vector2(moveVertical,moveHorizontal ).normalized;
-            //_Rigidbody2D.velocity = new Vector2 (moveHorizontal, moveVertical)* Time.deltaTime * _MovementSpeed;
-        
+            transform.Rotate(0,0,-moveHorizontal * _RotationSpeed * Time.deltaTime);
+            _movement = new Vector2(moveVertical,0 ).normalized;
         }
         void FixedUpdate()
         {
-            // Add velocity to the Rigidbody2D based on the movement vector and the object's rotation
             Vector2 direction = _Rigidbody2D.transform.TransformDirection(_movement);
             _Rigidbody2D.velocity = direction * Time.deltaTime * _MovementSpeed;
         }
-       
+       /* //old rotation towards mouse
         private void UpdateRotation()
         {
             Vector3 mousePos = Input.mousePosition;
@@ -63,7 +61,7 @@ namespace Entity.Scripts.Hand
             float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
             transform.localRotation = Quaternion.Euler(new Vector3(0, 0, angle));
         }
-
+*/
         private void OnTriggerEnter2D(Collider2D col)
         {
             if (!col.gameObject.TryGetComponent(out IPickable pickable)) return;
