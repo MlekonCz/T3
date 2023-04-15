@@ -7343,9 +7343,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1078104525}
     m_Modifications:
+    - target: {fileID: 1407086700933347236, guid: 5359364d4060de744b5815a97a85a9a6, type: 3}
+      propertyPath: m_margin.y
+      value: 0.021945953
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407086700933347236, guid: 5359364d4060de744b5815a97a85a9a6, type: 3}
+      propertyPath: m_margin.z
+      value: 0.009319782
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407086700933347236, guid: 5359364d4060de744b5815a97a85a9a6, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d356ef2c4662aa444953453e37460546, type: 2}
+    - target: {fileID: 1407086700933347236, guid: 5359364d4060de744b5815a97a85a9a6, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407086700933347236, guid: 5359364d4060de744b5815a97a85a9a6, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6791650110133547347, guid: d356ef2c4662aa444953453e37460546, type: 2}
     - target: {fileID: 1741388978650880757, guid: 5359364d4060de744b5815a97a85a9a6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970841186149340904, guid: 5359364d4060de744b5815a97a85a9a6, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5568628
       objectReference: {fileID: 0}
     - target: {fileID: 8739248370690664834, guid: 5359364d4060de744b5815a97a85a9a6, type: 3}
       propertyPath: m_Name
