@@ -23,7 +23,7 @@ namespace Entity.Scripts.Ai
 
         private Vector3 GetRandomWaypoint()
         {
-            return Game.Instance.NpcManager.GetWaypoint(_WaypointsDefinition.WaypointByWeight);
+            return Game.Instance.NpcManager.GetWaypoint(_WaypointsDefinition.WaypointConfigs);
         }
 
 

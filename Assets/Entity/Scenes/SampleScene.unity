@@ -2488,6 +2488,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _RoomController: {fileID: 1243519132}
+  _HandPowerUpgrade: {fileID: 0}
+  _HandSpeedUpgrade: {fileID: 0}
+  _HandVisionUpgrade: {fileID: 0}
 --- !u!1 &1169635403
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,6 +3003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _NpcManager: {fileID: 2131382055}
+  _PlayerManager: {fileID: 0}
 --- !u!1 &1430560930
 GameObject:
   m_ObjectHideFlags: 0
@@ -3577,7 +3581,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _WaypointsDefinition: {fileID: 11400000, guid: 74020e1ec2b457b4e97c2c0e8b44c0a7, type: 2}
-  waypoints: {fileID: 1804317152}
   _Target: {fileID: 1804317152}
   _Prefab: {fileID: 1612525790}
 --- !u!4 &1778373225

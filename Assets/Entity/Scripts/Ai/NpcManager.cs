@@ -10,36 +10,36 @@ namespace Entity.Scripts.Ai
         //public WaypointsDefinition WaypointsDefinition => _WaypointsDefinition;
 
 
-        public Vector3 GetWaypoint(Dictionary<Transform, WaypointConfig> waypointsByWeight)
+        public Vector3 GetWaypoint(List<WaypointConfig> waypointsByWeight)
         {
-            var availableWaypoints = new Dictionary<Transform, WaypointConfig>();
-            foreach (var kvp in waypointsByWeight)
+            var availableWaypoints = new List<WaypointConfig>();
+            foreach (var config in waypointsByWeight)
             {
-                if (_WaypointsDefinition.WaypointByWeight.ContainsKey(kvp.Key))
+                if (_WaypointsDefinition.WaypointConfigs.Contains(config))
                 {
-                    availableWaypoints.Add(kvp.Key, kvp.Value);
+                    availableWaypoints.Add(config);
                 }
             }
 
             int totalWeight = 0;
             foreach (var item in availableWaypoints)
             {
-                totalWeight += item.Value.Weight;
+                totalWeight += item.Weight;
             }
 
             int randomValue = Random.Range(0, totalWeight);
 
             foreach (var item in availableWaypoints)
             {
-                if (randomValue < item.Value.Weight)
+                if (randomValue < item.Weight)
                 {
-                    Debug.Log("weight of waypoint" + item.Value.Weight);
+                    Debug.Log("weight of waypoint" + item.Weight);
 
-                    return item.Key.position;
+                    return item.Position.position;
                 }
 
-                Debug.Log("subtracted " + item.Value.Weight);
-                randomValue -= item.Value.Weight;
+                Debug.Log("subtracted " + item.Weight);
+                randomValue -= item.Weight;
             }
 
             return Vector3.zero; 

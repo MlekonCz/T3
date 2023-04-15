@@ -7,9 +7,7 @@ namespace Entity.Scripts.Ai
     public class WaypointPopulator : MonoBehaviour
     {
         [SerializeField] private WaypointsDefinition _WaypointsDefinition;
-
-
-        [SerializeField] private Transform waypoints;
+        
         [Button]
         private void Populate()
         {
@@ -17,7 +15,7 @@ namespace Entity.Scripts.Ai
 
             foreach (var target in test)
             {
-                _WaypointsDefinition.WaypointByWeight.Add(target.transform, new WaypointConfig(1, 1, -1));
+                _WaypointsDefinition.WaypointConfigs.Add(new WaypointConfig(target.transform,1, 1, -1));
             }
         }
 
