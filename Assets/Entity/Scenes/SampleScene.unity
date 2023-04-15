@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 393647158}
   - component: {fileID: 393647159}
   m_Layer: 0
-  m_Name: 5_postel
+  m_Name: 05_postel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1006,7 +1006,7 @@ GameObject:
   - component: {fileID: 420467224}
   - component: {fileID: 420467225}
   m_Layer: 0
-  m_Name: 9_WC
+  m_Name: 09_WC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3524,7 +3524,7 @@ GameObject:
   - component: {fileID: 1254437299}
   - component: {fileID: 1254437300}
   m_Layer: 0
-  m_Name: 4_postel
+  m_Name: 04_postel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3789,7 +3789,7 @@ GameObject:
   - component: {fileID: 1612525791}
   - component: {fileID: 1612525792}
   m_Layer: 0
-  m_Name: 1_sprcha
+  m_Name: 01_sprcha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3994,7 +3994,7 @@ GameObject:
   - component: {fileID: 1739016481}
   - component: {fileID: 1739016482}
   m_Layer: 0
-  m_Name: 8_satnik
+  m_Name: 08_satnik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4038,7 +4038,7 @@ GameObject:
   - component: {fileID: 1750664143}
   - component: {fileID: 1750664144}
   m_Layer: 0
-  m_Name: 7_satnik
+  m_Name: 07_satnik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4126,7 +4126,7 @@ GameObject:
   - component: {fileID: 1767232110}
   - component: {fileID: 1767232111}
   m_Layer: 0
-  m_Name: 2_WC
+  m_Name: 02_WC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4262,7 +4262,7 @@ GameObject:
   - component: {fileID: 1780616280}
   - component: {fileID: 1780616281}
   m_Layer: 0
-  m_Name: 3_umyvadlo
+  m_Name: 03_umyvadlo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4525,7 +4525,7 @@ GameObject:
   - component: {fileID: 1879998282}
   - component: {fileID: 1879998283}
   m_Layer: 0
-  m_Name: 6_toaletny stolik
+  m_Name: 06_toaletny stolik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
