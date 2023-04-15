@@ -48,7 +48,7 @@ namespace Entity.Scripts.Items
         {
             if (col.gameObject.CompareTag(StringManager.PLAYER))
             {
-                Game.Instance.PlayerManager.ItemInRange(_ItemTierDefinition, true, _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
+                Game.Instance.PlayerManager.SetItemInRange(_ItemTierDefinition, true, _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
             }
         }
 
@@ -56,7 +56,7 @@ namespace Entity.Scripts.Items
         {
             if (other.gameObject.CompareTag(StringManager.PLAYER))
             {
-                Game.Instance.PlayerManager.ItemInRange(_ItemTierDefinition, false,  _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
+                Game.Instance.PlayerManager.SetItemInRange(_ItemTierDefinition, false,  _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
             }
             
         }

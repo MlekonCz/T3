@@ -1,5 +1,6 @@
 using System;
 using Entity.Scripts.Ai;
+using Entity.Scripts.Core;
 using Entity.Scripts.Hand;
 using UnityEngine;
 
@@ -17,7 +18,8 @@ namespace Entity.Scripts
         [SerializeField] private PlayerManager _PlayerManager;
         public PlayerManager PlayerManager => _PlayerManager;
 
-        
+        [SerializeField] private ScoreManager _ScoreManager;
+        public ScoreManager ScoreManager => _ScoreManager;
         
         private void Awake()
         {

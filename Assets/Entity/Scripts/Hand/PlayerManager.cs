@@ -43,16 +43,22 @@ namespace Entity.Scripts.Hand
             }
         }
 
-        public void ItemInRange(ItemTierDefinition itemTierDefinition, bool isInRange, Signs sign)
+        public void SetItemInRange(ItemTierDefinition itemTierDefinition, bool isInRange, Signs sign)
         {
             _HandController.HandSignManager.SetSign(sign, isInRange && itemTierDefinition.Tier <= _upgradeLevel);
-          
         }
         
+        public void SetSign(bool isActive, Signs sign)
+        {
+            _HandController.HandSignManager.SetSign(sign, isActive);
+        }
         
         private void Update()
         {
-            
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                OnInteractionKeyPressed.Dispatch();
+            }
         }
 
         public List<AHandUpgradeDefinition> CurrentUpgrades()

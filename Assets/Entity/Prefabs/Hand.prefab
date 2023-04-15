@@ -70,8 +70,8 @@ MonoBehaviour:
   _FeedTheRoomSign: {fileID: 2019104603008147101}
   _FeedSign: {fileID: 1955132908046807953}
   _PickUpSign: {fileID: 6999351683859872488}
-  _ReplaceTheItemSign: {fileID: 5608905535723035988}
-  _ReplaceSign: {fileID: 2343917430649071950}
+  _ReplaceTheItemSign: {fileID: 2343917430649071950}
+  _ReplaceSign: {fileID: 5608905535723035988}
 --- !u!70 &81211869297520161
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 6975807422059232234}
   - component: {fileID: 4201689236143847350}
   m_Layer: 5
-  m_Name: Replace
+  m_Name: ReplaceItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -430,7 +430,7 @@ RectTransform:
   m_Children:
   - {fileID: 8768969029417629784}
   m_Father: {fileID: 2789595272058713061}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 6769238677102287009}
   - component: {fileID: 5823013651125379041}
   m_Layer: 5
-  m_Name: ReplaceItem
+  m_Name: Replace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -960,7 +960,7 @@ RectTransform:
   m_Children:
   - {fileID: 241206829117775048}
   m_Father: {fileID: 2789595272058713061}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1071,7 +1071,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Replace
+  m_text: Replace the item
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d356ef2c4662aa444953453e37460546, type: 2}
   m_sharedMaterial: {fileID: -6791650110133547347, guid: d356ef2c4662aa444953453e37460546, type: 2}
@@ -1098,8 +1098,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.3
-  m_fontSizeBase: 0.3
+  m_fontSize: 0.25
+  m_fontSizeBase: 0.25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1175,8 +1175,8 @@ RectTransform:
   - {fileID: 348450052702057175}
   - {fileID: 9043501264395191022}
   - {fileID: 1504874293196625634}
-  - {fileID: 4694352083547222915}
   - {fileID: 6538839873421378674}
+  - {fileID: 4694352083547222915}
   m_Father: {fileID: 81211869297520175}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
