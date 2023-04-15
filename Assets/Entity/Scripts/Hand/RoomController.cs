@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using Entity.Scripts.Hand.Definitions;
 using strange.extensions.signal.impl;
 using UnityEngine;
 
@@ -8,11 +11,30 @@ namespace Entity.Scripts.Hand
         [SerializeField] private HandController _HandController;
 
         public Signal<float> OnPickableConsumed;
+
+        private void Awake()
+        {
+        }
+
         private void Update()
         {
         
         }
 
+        public void Initialize(List<AHandUpgradeDefinition> handSpeedUpgrade)
+        {
+            var currentUpgrades = Game.Instance.PlayerManager.CurrentUpgrades();
+
+            foreach (var upgrade in currentUpgrades)
+            {
+                if (upgrade is HandSpeedUpgrade speedUpgrade)
+                {
+                    _HandController.Initialize(speedUpgrade);
+
+                }
+            }
+        }
+        
         private void OnTriggerEnter2D(Collider2D col)
         {
             Debug.Log("Hand entered the room");

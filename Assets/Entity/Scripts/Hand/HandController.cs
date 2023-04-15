@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using Entity.Scripts.Hand.Definitions;
 using UnityEngine;
 
 namespace Entity.Scripts.Hand
@@ -22,12 +24,26 @@ namespace Entity.Scripts.Hand
         private IPickable _pickableInRange;
         
         public IPickable Pickable;
+
+
+        private void Start()
+        {
+            
+        }
+
+        public void Initialize(HandSpeedUpgrade handSpeedUpgrade)
+        {
+            _MovementSpeed *= handSpeedUpgrade.Modifier;
+            _RotationSpeed *= handSpeedUpgrade.Modifier;
+        }
+        
         private void Update()
         {
             UpdateMovement();
             CheckForPickingItemUp();
         }
 
+        
         private void CheckForPickingItemUp()
         {
             if (_isPickableInRange && Input.GetKeyDown(KeyCode.F))

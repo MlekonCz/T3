@@ -16,6 +16,7 @@ namespace Entity.Scripts.Ai
 
     public class WaypointConfig
     {
+        public Transform 
         public int Weight;
         public float Duration ;
         public int DayTime;
