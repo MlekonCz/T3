@@ -1,4 +1,5 @@
 using System;
+using Entity.Scripts.Ai;
 using UnityEngine;
 
 namespace Entity.Scripts
@@ -9,7 +10,8 @@ namespace Entity.Scripts
         private static Game _instance;
         public static Game Instance => _instance;
 
-
+        [SerializeField] private NpcManager _NpcManager;
+        public NpcManager NpcManager => _NpcManager;
         
         
         private void Awake()

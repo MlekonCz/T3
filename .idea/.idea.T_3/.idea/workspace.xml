@@ -84,7 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1681498447196</updated>
       <workItem from="1681498568428" duration="15131000" />
-      <workItem from="1681548630533" duration="10900000" />
+      <workItem from="1681548630533" duration="14276000" />
+      <workItem from="1681575164670" duration="499000" />
     </task>
     <servers />
   </component>
@@ -107,25 +108,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/NpcController.cs</url>
-          <line>30</line>
-          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Ai\NpcController.cs" initialLine="30" containingFunctionPresentation="method 'Update'">
-            <startOffsets>
-              <option value="814" />
-            </startOffsets>
-            <endOffsets>
-              <option value="889" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

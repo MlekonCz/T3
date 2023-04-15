@@ -12,6 +12,8 @@ namespace Entity.Scripts.Ai
         
         [SerializeField] private WaypointsDefinition _WaypointsDefinition;
 
+        
+        
         void Start()	{
             
             _NavMeshAgent.updateRotation = false;
@@ -21,8 +23,7 @@ namespace Entity.Scripts.Ai
 
         private Vector3 GetRandomWaypoint()
         {
-            return _WaypointsDefinition.WaypointByWeight.ElementAt(Random.Range(0,
-                _WaypointsDefinition.WaypointByWeight.Count)).Key.position;
+            return Game.Instance.NpcManager.GetWaypoint(_WaypointsDefinition.WaypointByWeight);
         }
 
 
@@ -30,7 +31,7 @@ namespace Entity.Scripts.Ai
         {
             if (Vector3.Distance(_NavMeshAgent.destination,transform.position) < 0.2f )
             {
-                _NavMeshAgent.destination = GetRandomWaypoint();
+                _NavMeshAgent.destination =  GetRandomWaypoint();
             }
         }
     }

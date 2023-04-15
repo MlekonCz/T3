@@ -126,7 +126,7 @@ MonoBehaviour:
       Data: 3|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
     - Name: Weight
       Entry: 3
-      Data: 4
+      Data: 1
     - Name: Duration
       Entry: 4
       Data: 1
