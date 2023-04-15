@@ -11,6 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/WaypointsDefinition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Extensions/NavMeshPlus/NavMeshComponents/Scripts/NavMeshBuilder2d.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -83,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681498447196</updated>
       <workItem from="1681498568428" duration="15131000" />
-      <workItem from="1681548630533" duration="325000" />
+      <workItem from="1681548630533" duration="2505000" />
     </task>
     <servers />
   </component>
