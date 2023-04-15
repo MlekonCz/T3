@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc00655660af459f841948e950ce297b, type: 3}
-  m_Name: HandVisionUpgrade_0
+  m_Script: {fileID: 11500000, guid: 87016c33c8fc4ea784a5e877d45589a2, type: 3}
+  m_Name: HandSpeedUpgrade_2
   m_EditorClassIdentifier: 
-  _Tier: 0
-  _Cost: 0
-  _Modifier: 1
+  _Tier: 2
+  _Cost: 10
+  _Modifier: 1.4
