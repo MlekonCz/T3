@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6983e976643a422a933ca50801798c58, type: 3}
   m_Name: HandPowerUpgrade_0
   m_EditorClassIdentifier: 
-  _Tier: 0
-  _Cost: 0
+  _Tier: 1
+  _Cost: 5
   _Modifier: 0

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87016c33c8fc4ea784a5e877d45589a2, type: 3}
   m_Name: HandSpeedUpgrade_1
   m_EditorClassIdentifier: 
-  _Tier: 1
-  _Cost: 5
+  _Tier: 2
+  _Cost: 25
   _Modifier: 1.2
