@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Entity.Scripts.Core
@@ -5,35 +6,39 @@ namespace Entity.Scripts.Core
     public class ScoreManager : MonoBehaviour
     {
 
+[SerializeField]
+        private int _PlayerScore;
 
-        private int _playerScore;
-
+        [NonSerialized]
         public int LifetimeScore;
 
-
+        private void Awake()
+        {
+            LifetimeScore = _PlayerScore;
+        }
 
         public int GetPlayerCurrentScore()
         {
-            return _playerScore;
+            return _PlayerScore;
         }
 
         public bool HasEnoughScore(int value)
         {
-            return _playerScore >= value;
+            return _PlayerScore >= value;
         }
 
 
         public void AddScore(int value)
         {
-            _playerScore += value;
+            _PlayerScore += value;
             LifetimeScore += value;
-            Debug.Log(_playerScore);
+            Debug.Log(_PlayerScore);
         }
 
         public void SubtractScore(int value)
         {
-            _playerScore -= value;
-            Debug.Log(_playerScore);
+            _PlayerScore -= value;
+            Debug.Log(_PlayerScore);
         }
     }
 }

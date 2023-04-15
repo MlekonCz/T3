@@ -19,7 +19,10 @@ namespace Entity.Scripts
         public PlayerManager PlayerManager => _PlayerManager;
 
         [SerializeField] private ScoreManager _ScoreManager;
-        public ScoreManager ScoreManager => _ScoreManager;
+        public ScoreManager ScoreManager => _ScoreManager;  
+        
+        [SerializeField] private GameManager _GameManager;
+        public GameManager GameManager => _GameManager;
         
         private void Awake()
         {

@@ -323,3 +323,4 @@ MonoBehaviour:
   _ItemTierDefinition: {fileID: 11400000, guid: 1555d5a25b4ba014da210646c3c8bd35, type: 2}
   _ItemImage: {fileID: 8739248370690664847}
   _PickedUpColor: {r: 0.09019608, g: 0.6862745, b: 1, a: 0.65882355}
+  _GlowObject: {fileID: 618350521114206652}

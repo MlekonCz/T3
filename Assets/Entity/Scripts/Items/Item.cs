@@ -12,6 +12,8 @@ namespace Entity.Scripts.Items
 
         [SerializeField] private Color _PickedUpColor;
 
+        [SerializeField] private GameObject _GlowObject;
+
         private bool _isPickedUp;
         
         private Color _originalColor;
@@ -30,12 +32,15 @@ namespace Entity.Scripts.Items
         {
             _ItemImage.color = _PickedUpColor;
             gameObject.GetComponent<Collider2D>().enabled = false;
+            _GlowObject.SetActive(false);
         }
 
         public void OnBeingCaught()
         {
             _ItemImage.color = _originalColor;
             gameObject.GetComponent<Collider2D>().enabled = true;
+            _GlowObject.SetActive(true);
+
         }
 
         public void OnBeingReplaced()
@@ -49,14 +54,29 @@ namespace Entity.Scripts.Items
             if (col.gameObject.CompareTag(TagManager.PLAYER))
             {
                 Game.Instance.PlayerManager.SetItemInRange(_ItemTierDefinition, true, _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
+                Game.Instance.PlayerManager.OnInteractionKeyPressed.AddListener(OnInteraction);
             }
         }
+
 
         private void OnTriggerExit2D(Collider2D other)
         {
             if (other.gameObject.CompareTag(TagManager.PLAYER))
             {
                 Game.Instance.PlayerManager.SetItemInRange(_ItemTierDefinition, false,  _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
+                Game.Instance.PlayerManager.OnInteractionKeyPressed.RemoveListener(OnInteraction);
+
+            }
+            
+        }
+        
+        private void OnInteraction()
+        {
+            var playerManager = Game.Instance.PlayerManager;
+            if (playerManager.CanPickItem(_ItemTierDefinition))
+            {
+                playerManager.CurrentPickable = this;
+                OnPickedUp();
             }
             
         }

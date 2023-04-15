@@ -10,8 +10,9 @@ namespace Entity.Scripts.Ai
         //public WaypointsDefinition WaypointsDefinition => _WaypointsDefinition;
 
 
-        public Vector3 GetWaypoint(List<WaypointConfig> waypointsByWeight)
+        public Vector3 GetWaypoint(List<WaypointConfig> waypointsByWeight, out float duration)
         {
+            
             var availableWaypoints = new List<WaypointConfig>();
             foreach (var config in waypointsByWeight)
             {
@@ -33,11 +34,13 @@ namespace Entity.Scripts.Ai
             {
                 if (randomValue < item.Weight)
                 {
+                    duration = item.Duration;
                     return item.Position;
                 }
                 randomValue -= item.Weight;
             }
-
+            
+            duration = 0;
             return Vector3.zero; 
         }
     }

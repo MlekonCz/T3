@@ -19,6 +19,9 @@ namespace Entity.Scripts.Hand
 
         private List<AHandUpgradeDefinition> _currentUpgrades = new List<AHandUpgradeDefinition>();
 
+        public IPickable CurrentPickable;
+
+        
         public Signal OnInteractionKeyPressed = new Signal();
 
         private void Awake()
@@ -83,6 +86,11 @@ namespace Entity.Scripts.Hand
             _upgradeLevel++;
             UpdateCurrentUpgrades();
             SetHand();
+        }
+
+        public bool CanPickItem(ItemTierDefinition itemTierDefinition)
+        {
+            return itemTierDefinition.Tier <= _upgradeLevel;
         }
     }
 }

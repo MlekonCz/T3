@@ -29,7 +29,7 @@ namespace Entity.Scripts.Hand
             Debug.Log("Hand entered the room");
             if (!col.gameObject.CompareTag(TagManager.PLAYER)) return;
 
-            Game.Instance.PlayerManager.SetSign(_HandController.Pickable != null, Signs.FeedSign);
+            Game.Instance.PlayerManager.SetSign(Game.Instance.PlayerManager.CurrentPickable != null, Signs.FeedSign);
                 
             Game.Instance.PlayerManager.OnInteractionKeyPressed.AddListener(OnInteraction);
             
@@ -47,8 +47,8 @@ namespace Entity.Scripts.Hand
 
         private void OnInteraction()
         {
-            if (_HandController.Pickable == null) return;
-            Game.Instance.ScoreManager.AddScore((int)_HandController.Pickable.GetItemTierDefinition().Reward);
+            if (Game.Instance.PlayerManager.CurrentPickable == null) return;
+            Game.Instance.ScoreManager.AddScore((int)Game.Instance.PlayerManager.CurrentPickable.GetItemTierDefinition().Reward);
             Game.Instance.PlayerManager.OnInteractionKeyPressed.RemoveListener(OnInteraction);
         }
     }

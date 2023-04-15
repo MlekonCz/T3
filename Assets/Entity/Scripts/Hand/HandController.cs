@@ -15,6 +15,7 @@ namespace Entity.Scripts.Hand
         [SerializeField] private Animator _Animator;
 
         [SerializeField] private HandSignManager _HandSignManager;
+
         public HandSignManager HandSignManager => _HandSignManager;
 
         
@@ -26,7 +27,6 @@ namespace Entity.Scripts.Hand
 
         private IPickable _pickableInRange;
         
-        public IPickable Pickable;
 
         private float _multipliedSpeed;
         private float _multipliedRotation;
@@ -45,18 +45,18 @@ namespace Entity.Scripts.Hand
         private void Update()
         {
             UpdateMovement();
-            CheckForPickingItemUp();
+           // CheckForPickingItemUp();
         }
 
         
-        private void CheckForPickingItemUp()
-        {
-            if (_isPickableInRange && Input.GetKeyDown(KeyCode.F))
-            {
-                Pickable = _pickableInRange;
-                _pickableInRange.OnPickedUp();
-            }
-        }
+        // private void CheckForPickingItemUp()
+        // {
+        //     if (_isPickableInRange && Input.GetKeyDown(KeyCode.F))
+        //     {
+        //         Pickable = _pickableInRange;
+        //         _pickableInRange.OnPickedUp();
+        //     }
+        // }
 
       
 
@@ -68,8 +68,8 @@ namespace Entity.Scripts.Hand
          
             //transform.Rotate(0,0,moveHorizontal * _RotationSpeed * Time.deltaTime);
             _movement = new Vector2(moveVertical,0 ).normalized;
-            
-            _Animator.SetBool(IsWalking,_movement.magnitude != 0);
+            Debug.Log(_movement.magnitude);
+            _Animator.SetBool(IsWalking,_movement.magnitude > 0);
         }
         void FixedUpdate()
         {
