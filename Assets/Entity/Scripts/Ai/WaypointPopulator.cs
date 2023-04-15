@@ -9,11 +9,11 @@ namespace Entity.Scripts.Ai
         [SerializeField] private WaypointsDefinition _WaypointsDefinition;
 
 
+        [SerializeField] private Transform waypoints;
         [Button]
         private void Populate()
         {
             var test = FindObjectsOfType<WaypointFinder>();
-
 
             foreach (var target in test)
             {

@@ -15,7 +15,63 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -34,7 +90,1351 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 56
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
       Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 2|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 3|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 4|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 5|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 6|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 7|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 8|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 7
+    - Name: $v
+      Entry: 7
+      Data: 9|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 8
+    - Name: $v
+      Entry: 7
+      Data: 10|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 9
+    - Name: $v
+      Entry: 7
+      Data: 11|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 10
+    - Name: $v
+      Entry: 7
+      Data: 12|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 11
+    - Name: $v
+      Entry: 7
+      Data: 13|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 12
+    - Name: $v
+      Entry: 7
+      Data: 14|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 13
+    - Name: $v
+      Entry: 7
+      Data: 15|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 14
+    - Name: $v
+      Entry: 7
+      Data: 16|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 15
+    - Name: $v
+      Entry: 7
+      Data: 17|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 16
+    - Name: $v
+      Entry: 7
+      Data: 18|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 17
+    - Name: $v
+      Entry: 7
+      Data: 19|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 18
+    - Name: $v
+      Entry: 7
+      Data: 20|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 19
+    - Name: $v
+      Entry: 7
+      Data: 21|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 20
+    - Name: $v
+      Entry: 7
+      Data: 22|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 21
+    - Name: $v
+      Entry: 7
+      Data: 23|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 22
+    - Name: $v
+      Entry: 7
+      Data: 24|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 23
+    - Name: $v
+      Entry: 7
+      Data: 25|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 24
+    - Name: $v
+      Entry: 7
+      Data: 26|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 25
+    - Name: $v
+      Entry: 7
+      Data: 27|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 26
+    - Name: $v
+      Entry: 7
+      Data: 28|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 27
+    - Name: $v
+      Entry: 7
+      Data: 29|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 28
+    - Name: $v
+      Entry: 7
+      Data: 30|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 29
+    - Name: $v
+      Entry: 7
+      Data: 31|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 30
+    - Name: $v
+      Entry: 7
+      Data: 32|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 31
+    - Name: $v
+      Entry: 7
+      Data: 33|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 32
+    - Name: $v
+      Entry: 7
+      Data: 34|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 33
+    - Name: $v
+      Entry: 7
+      Data: 35|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 34
+    - Name: $v
+      Entry: 7
+      Data: 36|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 35
+    - Name: $v
+      Entry: 7
+      Data: 37|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 36
+    - Name: $v
+      Entry: 7
+      Data: 38|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 37
+    - Name: $v
+      Entry: 7
+      Data: 39|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 38
+    - Name: $v
+      Entry: 7
+      Data: 40|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 39
+    - Name: $v
+      Entry: 7
+      Data: 41|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 40
+    - Name: $v
+      Entry: 7
+      Data: 42|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 41
+    - Name: $v
+      Entry: 7
+      Data: 43|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 42
+    - Name: $v
+      Entry: 7
+      Data: 44|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 43
+    - Name: $v
+      Entry: 7
+      Data: 45|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 44
+    - Name: $v
+      Entry: 7
+      Data: 46|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 45
+    - Name: $v
+      Entry: 7
+      Data: 47|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 46
+    - Name: $v
+      Entry: 7
+      Data: 48|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 47
+    - Name: $v
+      Entry: 7
+      Data: 49|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 48
+    - Name: $v
+      Entry: 7
+      Data: 50|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 49
+    - Name: $v
+      Entry: 7
+      Data: 51|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 50
+    - Name: $v
+      Entry: 7
+      Data: 52|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 51
+    - Name: $v
+      Entry: 7
+      Data: 53|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 52
+    - Name: $v
+      Entry: 7
+      Data: 54|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 53
+    - Name: $v
+      Entry: 7
+      Data: 55|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 54
+    - Name: $v
+      Entry: 7
+      Data: 56|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 55
+    - Name: $v
+      Entry: 7
+      Data: 57|Entity.Scripts.Ai.WaypointConfig, Assembly-CSharp
+    - Name: Weight
+      Entry: 3
+      Data: 1
+    - Name: Duration
+      Entry: 4
+      Data: 1
+    - Name: DayTime
+      Entry: 3
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
