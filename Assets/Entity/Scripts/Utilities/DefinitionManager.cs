@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Entity.Scripts;
+using Entity.Scripts.Ai;
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
 using Sirenix.Utilities.Editor;
 using UnityEditor;
 using UnityEngine;
 
-
+namespace Entity.Scripts.Utilities
+{
     public enum ManagerState
     {
         // 1. Add new field that will be used as a Tab
@@ -193,7 +194,6 @@ using UnityEngine;
             }
             
             T newItem = ScriptableObject.CreateInstance<T>();
-            // newItem.name = "New " + typeof(T).ToString();
 
             if (string.IsNullOrWhiteSpace(path))
             {
@@ -292,3 +292,4 @@ using UnityEngine;
             this.path = path;
         }
     }
+}

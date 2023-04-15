@@ -1,4 +1,4 @@
-namespace Entity.Scripts
+namespace Entity.Scripts.Utilities
 {
     public static class StringManager
     {
