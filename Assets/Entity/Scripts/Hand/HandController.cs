@@ -59,8 +59,9 @@ namespace Entity.Scripts.Hand
         {
             float moveHorizontal = Input.GetAxis ("Horizontal");
             float moveVertical = Input.GetAxis ("Vertical");
- 
-            transform.Rotate(0,0,-moveHorizontal * _RotationSpeed * Time.deltaTime);
+
+         
+            //transform.Rotate(0,0,moveHorizontal * _RotationSpeed * Time.deltaTime);
             _movement = new Vector2(moveVertical,0 ).normalized;
             
             _Animator.SetBool(IsWalking,_movement.magnitude != 0);
@@ -68,6 +69,7 @@ namespace Entity.Scripts.Hand
         void FixedUpdate()
         {
             Vector2 direction = _Rigidbody2D.transform.TransformDirection(_movement);
+            _Rigidbody2D.MoveRotation(_Rigidbody2D.rotation -= Input.GetAxis ("Horizontal")* _RotationSpeed * Time.deltaTime);
             _Rigidbody2D.velocity = direction * Time.deltaTime * _MovementSpeed;
         }
        /* //old rotation towards mouse

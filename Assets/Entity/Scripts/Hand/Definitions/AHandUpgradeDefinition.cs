@@ -2,7 +2,6 @@ using UnityEngine;
 
 namespace Entity.Scripts.Hand.Definitions
 {
-    [CreateAssetMenu(fileName = "HandDefinition", menuName = "HandDefinition", order = 0)]
     public abstract class AHandUpgradeDefinition : ScriptableObject
     {
         

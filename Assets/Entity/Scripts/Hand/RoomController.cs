@@ -21,11 +21,10 @@ namespace Entity.Scripts.Hand
         
         }
 
-        public void Initialize(List<AHandUpgradeDefinition> handSpeedUpgrade)
+        public void Initialize(List<AHandUpgradeDefinition> handUpgrade)
         {
-            var currentUpgrades = Game.Instance.PlayerManager.CurrentUpgrades();
 
-            foreach (var upgrade in currentUpgrades)
+            foreach (var upgrade in handUpgrade)
             {
                 if (upgrade is HandSpeedUpgrade speedUpgrade)
                 {

@@ -9,27 +9,32 @@ namespace Entity.Scripts.Hand
     {
         [SerializeField] private RoomController _RoomController;
 
-        [SerializeField] private HandPowerUpgrade _HandPowerUpgrade;
-        [SerializeField] private HandSpeedUpgrade _HandSpeedUpgrade;
-        [SerializeField] private HandVisionUpgrade _HandVisionUpgrade;
+        [SerializeField] private List<HandPowerUpgrade> _HandPowerUpgrade;
+        [SerializeField] private List<HandSpeedUpgrade> _HandSpeedUpgrade;
+        [SerializeField] private List<HandVisionUpgrade> _HandVisionUpgrade;
+        
+        private int _upgradeLevel = 0;
 
-
-        //private List<AHandUpgradeDefinition> _currentUpgrades = new List<AHandUpgradeDefinition>();
-
-        private Dictionary<AHandUpgradeDefinition, int> _leverPerUpgrade = new Dictionary<AHandUpgradeDefinition, int>();
+        private List<AHandUpgradeDefinition> _currentUpgrades = new List<AHandUpgradeDefinition>();
 
 
         private void Awake()
         {
+            _currentUpgrades.Add(_HandPowerUpgrade[_upgradeLevel]);
+            _currentUpgrades.Add(_HandSpeedUpgrade[_upgradeLevel]);
+            _currentUpgrades.Add(_HandVisionUpgrade[_upgradeLevel]);
+            
             _RoomController.Initialize(CurrentUpgrades());
+
         }
+
 
         public List<AHandUpgradeDefinition> CurrentUpgrades()
         {
             var currentUpgrades = new List<AHandUpgradeDefinition>();
-            foreach (var kvp in _leverPerUpgrade)
+            foreach (var upgrade in _currentUpgrades)
             {
-                currentUpgrades.Add(kvp.Key);
+                currentUpgrades.Add(upgrade);
             }
 
             return currentUpgrades;
