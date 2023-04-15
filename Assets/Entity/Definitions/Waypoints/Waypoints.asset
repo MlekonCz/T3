@@ -20,249 +20,285 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: _WaypointByWeight
-      Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[UnityEngine.Transform, UnityEngine.CoreModule],[Entity.Scripts.Ai.WaypointConfig,
-        Assembly-CSharp]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[UnityEngine.Transform,
-        UnityEngine.CoreModule]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+    SerializationNodes: []
   _WaypointConfigs:
-  - Position: {fileID: 0}
+  - Name: 01_sprcha
+    Position: {x: -38.72, y: 37.58, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: 02_WC
+    Position: {x: -38.62, y: 40.83, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: 03_umyvadlo
+    Position: {x: -33.68, y: 37.89, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: 04_postel
+    Position: {x: -36.7, y: 46.8, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: 05_postel
+    Position: {x: -36.7, y: 50.1, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: 06_toaletny stolik
+    Position: {x: -38.8, y: 43.7, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: 07_satnik
+    Position: {x: -24.1, y: 49.9, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: 08_satnik
+    Position: {x: -24.2, y: 45.7, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: 09_WC
+    Position: {x: -18, y: 51.6, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: 10_pracka
+    Position: {x: -18.3, y: 46.3, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: 11_vana
+    Position: {x: -3.5, y: 51.3, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: 12_sprcha
+    Position: {x: 1.6, y: 52.2, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '13_umyvadlo '
+    Position: {x: 1.2, y: 47.6, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '14_linka '
+    Position: {x: 6, y: 50.1, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '15_linka '
+    Position: {x: 6.1, y: 46.6, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '16_ostrov '
+    Position: {x: 9.02, y: 49.43, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '17_bar '
+    Position: {x: 8.47, y: 45.74, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '18_bar '
+    Position: {x: 10.59, y: 46.29, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '19_skrina '
+    Position: {x: 18.35, y: 52.25, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '20_stol '
+    Position: {x: 15.61, y: 47.7, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '21_stol '
+    Position: {x: 18.98, y: 47.7, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '22_stol '
+    Position: {x: 21.72, y: 45.19, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '23_stol '
+    Position: {x: 18.9, y: 43.54, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '24_stol '
+    Position: {x: 15.53, y: 43.15, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '25_stol '
+    Position: {x: 13.57, y: 45.58, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '26_kresielko '
+    Position: {x: 28.06, y: 50.89, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '27_kresielko '
+    Position: {x: 31.83, y: 50.98, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '28_stol '
+    Position: {x: 33.28, y: 42.33, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '29_stol '
+    Position: {x: 29.43, y: 42.07, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '30_stol '
+    Position: {x: 28.14, y: 40.02, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '31_stol '
+    Position: {x: 30.54, y: 38.65, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '32_stol '
+    Position: {x: 33.02, y: 38.82, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '33_pohovka '
+    Position: {x: 27.44, y: 28.51, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '34_pohovka '
+    Position: {x: 20.14, y: 31.34, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '35_pohovka '
+    Position: {x: 22.09, y: 24.33, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '36_kniznica '
+    Position: {x: 19.2, y: 15.3, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '37_kniznica '
+    Position: {x: 9.9, y: 15.5, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '38_skrina '
+    Position: {x: 4.87, y: 24.9, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '39_kreslo '
+    Position: {x: 9.68, y: 22.38, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '40_pohovka '
+    Position: {x: 12.55, y: 27.35, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '41_pohovka '
+    Position: {x: 12.46, y: 31.4, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '42_kresielko '
+    Position: {x: -14.17, y: 19.68, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '43_pohovka '
+    Position: {x: -26.9, y: 19.3, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '44_kresielko '
+    Position: {x: -37.1, y: 18.7, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '45_stol '
+    Position: {x: -6.5, y: 32.4, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '46_pohovka '
+    Position: {x: -8.8, y: 25.9, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '47_pohovka '
+    Position: {x: -4.7, y: 25.1, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '48_postel '
+    Position: {x: -14.9, y: 32.1, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '49_skrina '
+    Position: {x: -24.1, y: 31.2, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '50_kreslo '
+    Position: {x: -17.5, y: 25, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '51_stol '
+    Position: {x: -13.5, y: 24.9, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '52_skrina '
+    Position: {x: -33, y: 33.2, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '53_kreslo '
+    Position: {x: -28.6, y: 24.1, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '54_postel '
+    Position: {x: -36.7, y: 28.7, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '55_stol '
+    Position: {x: -36.9, y: 24.8, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1
-  - Position: {fileID: 0}
+  - Name: '56_vychadzka '
+    Position: {x: -11.1, y: 62.4, z: -10.010139}
     Weight: 1
     Duration: 1
     DayTime: -1

@@ -35,7 +35,7 @@ namespace Entity.Scripts.Ai
                 {
                     Debug.Log("weight of waypoint" + item.Weight);
 
-                    return item.Position.position;
+                    return item.Position;
                 }
 
                 Debug.Log("subtracted " + item.Weight);
