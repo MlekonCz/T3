@@ -33,12 +33,8 @@ namespace Entity.Scripts.Ai
             {
                 if (randomValue < item.Weight)
                 {
-                    Debug.Log("weight of waypoint" + item.Weight);
-
                     return item.Position;
                 }
-
-                Debug.Log("subtracted " + item.Weight);
                 randomValue -= item.Weight;
             }
 
