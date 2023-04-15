@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3346221ba25780e4b8d227739e79ad54, type: 3}
-  m_Name: Waypoints
+  m_Name: Father
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -24,337 +24,193 @@ MonoBehaviour:
   _WaypointConfigs:
   - Name: 01_sprcha
     Position: {x: -38.2, y: 37.98, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.25
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: 02_WC
     Position: {x: -38.1, y: 41.01, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.25
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: 03_umyvadlo
     Position: {x: -34.78, y: 38.01, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.25
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: 04_postel
     Position: {x: -38.05, y: 47.53, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: 05_postel
-    Position: {x: -38.05, y: 50.16, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: 06_toaletny stolik
-    Position: {x: -38.8, y: 45.34, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: 07_satnik
-    Position: {x: -24.8, y: 50.36, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
+    Weight: 5
+    Duration: 6
+    DayTime: 23
     TranformForEditor: {fileID: 0}
   - Name: 08_satnik
     Position: {x: -24.9, y: 45.94, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.25
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: 09_WC
     Position: {x: -19.22, y: 52.09, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: 10_pracka
-    Position: {x: -18.37, y: 45.81, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: 11_vana
     Position: {x: -3.97, y: 52.48, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: 12_sprcha
-    Position: {x: 1.28, y: 51.88, z: -10.010139}
-    Weight: 1
+    Weight: 5
     Duration: 1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '13_umyvadlo '
     Position: {x: 1.17, y: 49.2, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '14_linka '
     Position: {x: 6.51, y: 49.01, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.25
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '15_linka '
     Position: {x: 6.46, y: 46.03, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.25
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '16_ostrov '
     Position: {x: 7.39, y: 51.36, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.25
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '17_bar '
     Position: {x: 7.46, y: 44.08, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.25
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '18_bar '
     Position: {x: 11, y: 45.85, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.25
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '19_skrina '
     Position: {x: 21.68, y: 52.5, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '20_stol '
-    Position: {x: 15.02, y: 49.1, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '21_stol '
-    Position: {x: 21.03, y: 49.32, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '22_stol '
     Position: {x: 21.22, y: 46.28, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '23_stol '
-    Position: {x: 18.15, y: 43.7, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '24_stol '
-    Position: {x: 15.09, y: 46.17, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '25_stol '
-    Position: {x: 18.23, y: 51.24, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
+    Weight: 5
+    Duration: 2
+    DayTime: 18
     TranformForEditor: {fileID: 0}
   - Name: '26_kresielko '
     Position: {x: 28.06, y: 50.89, z: -10.010139}
-    Weight: 1
+    Weight: 5
     Duration: 1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '27_kresielko '
     Position: {x: 31.83, y: 50.98, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '28_stol '
-    Position: {x: 28.1, y: 45.44, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '29_stol '
-    Position: {x: 31.02, y: 43.7, z: -10.010139}
-    Weight: 1
+    Weight: 5
     Duration: 1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '30_stol '
     Position: {x: 31.06, y: 40.72, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '31_stol '
-    Position: {x: 28.06, y: 38.54, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '32_stol '
-    Position: {x: 34.06, y: 35.05, z: -10.010139}
-    Weight: 1
+    Weight: 5
     Duration: 1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '33_pohovka '
     Position: {x: 27.09, y: 30.52, z: -10.010139}
-    Weight: 1
+    Weight: 5
     Duration: 1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '34_pohovka '
     Position: {x: 20.85, y: 31.24, z: -10.010139}
-    Weight: 1
+    Weight: 5
     Duration: 1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '35_pohovka '
     Position: {x: 22.9, y: 26.34, z: -10.010139}
-    Weight: 1
+    Weight: 5
     Duration: 1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '36_kniznica '
     Position: {x: 20.04, y: 16.21, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '37_kniznica '
     Position: {x: 8.41, y: 16.02, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '38_skrina '
     Position: {x: 5.77, y: 23.4, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '39_kreslo '
     Position: {x: 9.72, y: 24.18, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 0.1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '40_pohovka '
     Position: {x: 12.55, y: 27.35, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 2
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '41_pohovka '
     Position: {x: 12.33, y: 29.9, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 5
+    Duration: 2
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '42_kresielko '
     Position: {x: -13.84, y: 19.39, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '43_pohovka '
-    Position: {x: -26.9, y: 20.36, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '44_kresielko '
-    Position: {x: -37.76, y: 19.32, z: -10.010139}
-    Weight: 1
+    Weight: 5
     Duration: 1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '45_stol '
     Position: {x: -6.71, y: 32.78, z: -10.010139}
-    Weight: 1
-    Duration: 1
+    Weight: 10
+    Duration: 2
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '46_pohovka '
     Position: {x: -9.21, y: 26.22, z: -10.010139}
-    Weight: 1
+    Weight: 10
     Duration: 1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '47_pohovka '
     Position: {x: -4.42, y: 24.13, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '48_postel '
-    Position: {x: -15.55, y: 32.99, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '49_skrina '
-    Position: {x: -22.43, y: 29.78, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '50_kreslo '
-    Position: {x: -18.47, y: 24.55, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '51_stol '
-    Position: {x: -14.76, y: 26.24, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '52_skrina '
-    Position: {x: -32.75, y: 32.56, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '53_kreslo '
-    Position: {x: -28.9, y: 24.35, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '54_postel '
-    Position: {x: -37.25, y: 29.46, z: -10.010139}
-    Weight: 1
-    Duration: 1
-    DayTime: -1
-    TranformForEditor: {fileID: 0}
-  - Name: '55_stol '
-    Position: {x: -38.68, y: 25.9, z: -10.010139}
-    Weight: 1
+    Weight: 10
     Duration: 1
     DayTime: -1
     TranformForEditor: {fileID: 0}
   - Name: '56_vychadzka '
     Position: {x: -11.1, y: 62.4, z: -10.010139}
     Weight: 1
-    Duration: 1
-    DayTime: -1
+    Duration: 8
+    DayTime: 9
     TranformForEditor: {fileID: 0}
