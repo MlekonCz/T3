@@ -21,18 +21,7 @@ namespace Entity.Scripts.Hand
         
         }
 
-        public void Initialize(List<AHandUpgradeDefinition> handUpgrade)
-        {
-
-            foreach (var upgrade in handUpgrade)
-            {
-                if (upgrade is HandSpeedUpgrade speedUpgrade)
-                {
-                    _HandController.Initialize(speedUpgrade);
-
-                }
-            }
-        }
+       
         
         private void OnTriggerEnter2D(Collider2D col)
         {

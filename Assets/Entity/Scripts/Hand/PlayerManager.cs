@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Entity.Scripts.Hand.Definitions;
+using strange.extensions.signal.impl;
 using UnityEngine;
 
 namespace Entity.Scripts.Hand
@@ -8,6 +9,7 @@ namespace Entity.Scripts.Hand
     public class PlayerManager : MonoBehaviour
     {
         [SerializeField] private RoomController _RoomController;
+        [SerializeField] private HandController _HandController;
 
         [SerializeField] private List<HandPowerUpgrade> _HandPowerUpgrade;
         [SerializeField] private List<HandSpeedUpgrade> _HandSpeedUpgrade;
@@ -17,6 +19,7 @@ namespace Entity.Scripts.Hand
 
         private List<AHandUpgradeDefinition> _currentUpgrades = new List<AHandUpgradeDefinition>();
 
+        public Signal OnInteractionKeyPressed = new Signal();
 
         private void Awake()
         {
@@ -24,10 +27,33 @@ namespace Entity.Scripts.Hand
             _currentUpgrades.Add(_HandSpeedUpgrade[_upgradeLevel]);
             _currentUpgrades.Add(_HandVisionUpgrade[_upgradeLevel]);
             
-            _RoomController.Initialize(CurrentUpgrades());
-
+            
+            
+            SetHand();
         }
 
+        private void SetHand()
+        {
+            foreach (var upgrade in CurrentUpgrades())
+            {
+                if (upgrade is HandSpeedUpgrade speedUpgrade)
+                {
+                    _HandController.Initialize(speedUpgrade);
+                }
+            }
+        }
+
+        public void ItemInRange(ItemTierDefinition itemTierDefinition, bool isInRange, Signs sign)
+        {
+            _HandController.HandSignManager.SetSign(sign, isInRange && itemTierDefinition.Tier <= _upgradeLevel);
+          
+        }
+        
+        
+        private void Update()
+        {
+            
+        }
 
         public List<AHandUpgradeDefinition> CurrentUpgrades()
         {

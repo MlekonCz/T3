@@ -5,21 +5,19 @@ namespace Entity.Scripts
     [CreateAssetMenu(fileName = "ItemTier", menuName = "ItemTier", order = 0)]
     public class ItemTierDefinition : ScriptableObject
     {
-        [SerializeField]
-        public float _Reward;
+        [SerializeField] private int _Tier;
+        public int Tier => _Tier;
+        
+        [SerializeField] private float _Reward;
         public float Reward => _Reward;
-        
-        [SerializeField]
-        public float _SlowModifier;
+
+        [SerializeField] private float _SlowModifier;
         public float SlowModifier => _SlowModifier;
-        
-        [SerializeField]
-        public float _PickUpTime;
+
+        [SerializeField] private float _PickUpTime;
         public float PickUpTime => _PickUpTime;
-        
-        [SerializeField]
-        public float _CopyCreationTime;
+
+        [SerializeField] private float _CopyCreationTime;
         public float CopyCreationTime => _CopyCreationTime;
-        
     }
 }

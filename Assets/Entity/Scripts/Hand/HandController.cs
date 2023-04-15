@@ -1,6 +1,5 @@
-using System;
-using System.Collections.Generic;
 using Entity.Scripts.Hand.Definitions;
+using strange.extensions.signal.impl;
 using UnityEngine;
 
 namespace Entity.Scripts.Hand
@@ -15,6 +14,10 @@ namespace Entity.Scripts.Hand
 
         [SerializeField] private Animator _Animator;
 
+        [SerializeField] private HandSignManager _HandSignManager;
+        public HandSignManager HandSignManager => _HandSignManager;
+
+        
         private const string IS_WALKING = "IsWalking";
         private static readonly int IsWalking = Animator.StringToHash(IS_WALKING);
 
@@ -72,23 +75,6 @@ namespace Entity.Scripts.Hand
             _Rigidbody2D.MoveRotation(_Rigidbody2D.rotation -= Input.GetAxis ("Horizontal")* _RotationSpeed * Time.deltaTime);
             _Rigidbody2D.velocity = direction * Time.deltaTime * _MovementSpeed;
         }
-       /* //old rotation towards mouse
-        private void UpdateRotation()
-        {
-            Vector3 mousePos = Input.mousePosition;
-            mousePos.z = 5.23f;
-
-            if (Camera.main != null)
-            {
-                Vector3 objectPos = Camera.main.WorldToScreenPoint(transform.position);
-                mousePos.x -= objectPos.x;
-                mousePos.y -= objectPos.y;
-            }
-
-            float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-            transform.localRotation = Quaternion.Euler(new Vector3(0, 0, angle));
-        }
-*/
         private void OnTriggerEnter2D(Collider2D col)
         {
             if (!col.gameObject.TryGetComponent(out IPickable pickable)) return;

@@ -1,11 +1,8 @@
-using System;
 using Entity.Scripts.Hand;
 using Entity.Scripts.Utilities;
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.UI;
 
-namespace Entity.Scripts
+namespace Entity.Scripts.Items
 {
     public class Item : MonoBehaviour, IPickable
     {
@@ -15,15 +12,13 @@ namespace Entity.Scripts
 
         [SerializeField] private Color _PickedUpColor;
 
-        [SerializeField] private GameObject _CollectSign;
+        private bool _isPickedUp;
         
         private Color _originalColor;
 
         private void Awake()
         {
             _originalColor = _ItemImage.color;
-            _CollectSign.SetActive(false);
-
         }
 
         public ItemTierDefinition GetItemTierDefinition()
@@ -53,7 +48,7 @@ namespace Entity.Scripts
         {
             if (col.gameObject.CompareTag(StringManager.PLAYER))
             {
-                _CollectSign.SetActive(true);
+                Game.Instance.PlayerManager.ItemInRange(_ItemTierDefinition, true, _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
             }
         }
 
@@ -61,7 +56,7 @@ namespace Entity.Scripts
         {
             if (other.gameObject.CompareTag(StringManager.PLAYER))
             {
-                _CollectSign.SetActive(false);
+                Game.Instance.PlayerManager.ItemInRange(_ItemTierDefinition, false,  _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
             }
             
         }
