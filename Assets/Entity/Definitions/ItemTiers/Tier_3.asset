@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2420676ad63e45c88aeb5feee5df9fd0, type: 3}
   m_Name: Tier_3
   m_EditorClassIdentifier: 
-  _Reward: 1
-  _SlowModifier: 0.2
+  _Reward: 4
+  _SlowModifier: 0.6
   _PickUpTime: 1
-  _CopyCreationTime: 2
+  _CopyCreationTime: 3
