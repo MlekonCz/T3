@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Tier_2
   m_EditorClassIdentifier: 
   _Tier: 2
-  _Reward: 2
+  _Reward: 5
   _SlowModifier: 0.8
   _PickUpTime: 2
   _CopyCreationTime: 1
+  _SusIncrease: 0
