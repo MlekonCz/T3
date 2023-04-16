@@ -36,8 +36,19 @@ namespace Entity.Scripts.Ai
 
         private void Update()
         {
-            if(_Animator)_Animator.SetBool(IsWalking,!_isAtDestination);
+            if (_Animator)
+            {
+                _Animator.SetBool(IsWalking,!_isAtDestination);
+                
+                float angle = Mathf.Atan2(_NavMeshAgent.velocity.y, _NavMeshAgent.velocity.x);
 
+                float degrees = angle * Mathf.Rad2Deg;
+
+                transform.rotation = Quaternion.Euler(0, 0, degrees);
+             //   _Animator.gameObject.transform.LookAt(test);
+            }
+
+            
             if (Vector3.Distance(_NavMeshAgent.destination,transform.position) < 0.2f && !_isAtDestination )
             {
                 _isAtDestination = true;
