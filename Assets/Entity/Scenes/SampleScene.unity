@@ -3269,7 +3269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f51dcf8762808674598f807ceb6cb724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _TimeMultiplier: 20
+  _TimeMultiplier: 30
   _MaxSuspicion: 100
 --- !u!1001 &361943493
 PrefabInstance:
