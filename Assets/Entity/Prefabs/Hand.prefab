@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 81211869297520175}
   - component: {fileID: 81211869297520173}
   - component: {fileID: 3543924597087386068}
-  - component: {fileID: 81211869297520161}
+  - component: {fileID: 7130589153907183317}
   - component: {fileID: 81211869297520160}
   m_Layer: 7
   m_Name: Hand
@@ -74,8 +74,8 @@ MonoBehaviour:
   _ReplaceTheItemSign: {fileID: 6905888568004558103}
   _ReplaceSign: {fileID: 6091666404673632217}
   _UpgradeSign: {fileID: 1990506498689653940}
---- !u!70 &81211869297520161
-CapsuleCollider2D:
+--- !u!58 &7130589153907183317
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -87,9 +87,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.22420278, y: -0.00450084}
-  m_Size: {x: 1.5516007, y: 0.98286927}
-  m_Direction: 1
+  m_Offset: {x: -0.13275957, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.6327596
 --- !u!50 &81211869297520160
 Rigidbody2D:
   serializedVersion: 4
@@ -595,6 +595,7 @@ GameObject:
   - component: {fileID: 7154210116633718986}
   - component: {fileID: 3212233953196779928}
   - component: {fileID: 5058334653335739325}
+  - component: {fileID: 592234648049747380}
   m_Layer: 5
   m_Name: Upgrade
   m_TagString: Untagged
@@ -665,6 +666,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &592234648049747380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990506498689653940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f447c64957b43f095ef8c7f1de744cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Text: {fileID: 1672937733044553391}
 --- !u!1 &2113766310541658520
 GameObject:
   m_ObjectHideFlags: 0

@@ -47,7 +47,15 @@ namespace Entity.Scripts.Items
 
         public void OnBeingReplaced()
         {
-            _ItemImage.color = new Color(1,0,1,0.8f);
+            if (_ReplacementSprite)
+            {
+                _ItemImage.color = new Color(1,1,1,0.8f);
+                _ItemImage.sprite = _ReplacementSprite;
+            }
+            else
+            {
+                _ItemImage.color = new Color(1,0,1,0.8f);
+            }
             gameObject.GetComponent<Collider2D>().enabled = false;
         }
 

@@ -35,11 +35,13 @@ namespace Entity.Scripts.Hand
         {
             var instance = Game.Instance;
 
-            if (!instance.ScoreManager.HasEnoughScore(instance.PlayerManager.CurrentUpgrades()[0].Cost)) return;
+            var upgradeCost = instance.PlayerManager.CurrentUpgrades()[0].Cost;
+            if (!instance.ScoreManager.HasEnoughScore(upgradeCost)) return;
 
-            instance.ScoreManager.SubtractScore(instance.PlayerManager.CurrentUpgrades()[0].Cost);
-            instance.PlayerManager.UpgradePurchased();
+            
             instance.PlayerManager.OnInteractionKeyPressed.RemoveListener(OnInteraction);
+            instance.PlayerManager.UpgradePurchased();
+            instance.ScoreManager.SubtractScore(upgradeCost);
         }
     }
 }

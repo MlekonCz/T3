@@ -9,14 +9,17 @@ namespace Entity.Scripts.Ai
         [SerializeField] private WaypointsDefinition _WaypointsDefinition;
         //public WaypointsDefinition WaypointsDefinition => _WaypointsDefinition;
 
+       private readonly List<WaypointConfig> _usedWaypoints = new List<WaypointConfig>();
 
-        public Vector3 GetWaypoint(List<WaypointConfig> waypointsByWeight, out float duration)
+        
+
+        public WaypointConfig GetWaypoint(List<WaypointConfig> waypointsByWeight, out float duration)
         {
             
             var availableWaypoints = new List<WaypointConfig>();
             foreach (var config in waypointsByWeight)
             {
-                if (_WaypointsDefinition.WaypointConfigs.Find(x => x.Name == config.Name) != null)
+                if (_WaypointsDefinition.WaypointConfigs.Find(x => x.Name == config.Name) != null && !_usedWaypoints.Contains(config))
                 {
                     availableWaypoints.Add(config);
                 }
@@ -34,14 +37,20 @@ namespace Entity.Scripts.Ai
             {
                 if (randomValue < item.Weight)
                 {
+                    _usedWaypoints.Add(item);
                     duration = item.Duration;
-                    return item.Position;
+                    return item;
                 }
                 randomValue -= item.Weight;
             }
             
             duration = 0;
-            return Vector3.zero; 
+            return null; 
+        }
+
+        public void ReturnWaypoint(WaypointConfig config)
+        {
+            _usedWaypoints.Remove(config);
         }
     }
 }
