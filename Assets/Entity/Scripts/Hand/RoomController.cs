@@ -75,6 +75,7 @@ namespace Entity.Scripts.Hand
             CraftFakeItem(Game.Instance.PlayerManager.CurrentPickable);
             Game.Instance.ScoreManager.AddScore((int)Game.Instance.PlayerManager.CurrentPickable.GetItemTierDefinition().Reward);
             Game.Instance.PlayerManager.OnInteractionKeyPressed.RemoveListener(OnInteraction);
+            Game.Instance.PlayerManager.SetSign(false,Signs.FeedSign);
 
             Game.Instance.PlayerManager.CurrentPickable = null;
             Game.Instance.PlayerManager.SetSign(false, Signs.FeedSign);
