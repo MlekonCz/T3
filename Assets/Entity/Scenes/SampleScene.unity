@@ -234,6 +234,7 @@ MonoBehaviour:
   _Animator: {fileID: 152324784}
   _NpcDefinition: {fileID: 11400000, guid: 650e1e2bc1037214c9c1833e32b6452e, type: 2}
   _NpcRadar: {fileID: 482476953}
+  sped: 2
 --- !u!195 &10284407
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -403,6 +404,7 @@ MonoBehaviour:
   _Animator: {fileID: 642997183}
   _NpcDefinition: {fileID: 11400000, guid: 650e1e2bc1037214c9c1833e32b6452e, type: 2}
   _NpcRadar: {fileID: 524396423}
+  sped: 3.5
 --- !u!195 &15615788
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -478,6 +480,7 @@ MonoBehaviour:
   _Animator: {fileID: 865351990}
   _NpcDefinition: {fileID: 11400000, guid: 650e1e2bc1037214c9c1833e32b6452e, type: 2}
   _NpcRadar: {fileID: 1330204080}
+  sped: 3.5
 --- !u!195 &19393564
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1159,6 +1162,7 @@ MonoBehaviour:
   _Animator: {fileID: 136159709}
   _NpcDefinition: {fileID: 11400000, guid: 650e1e2bc1037214c9c1833e32b6452e, type: 2}
   _NpcRadar: {fileID: 674572379}
+  sped: 3.5
 --- !u!195 &91291749
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9818,7 +9822,7 @@ Transform:
   m_GameObject: {fileID: 1008370718}
   m_LocalRotation: {x: 0.36775607, y: 0.3473808, z: -0.6270756, w: -0.5923329}
   m_LocalPosition: {x: 0.234, y: 0.013, z: -0.067}
-  m_LocalScale: {x: 0.13260487, y: 0.17799346, z: 0.027249716}
+  m_LocalScale: {x: 0.13, y: 0.18218541, z: 0.008868181}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1243519134}
@@ -11520,6 +11524,7 @@ MonoBehaviour:
   _Animator: {fileID: 168728254}
   _NpcDefinition: {fileID: 11400000, guid: 650e1e2bc1037214c9c1833e32b6452e, type: 2}
   _NpcRadar: {fileID: 1079708307}
+  sped: 3.5
 --- !u!195 &1191855509
 NavMeshAgent:
   m_ObjectHideFlags: 0

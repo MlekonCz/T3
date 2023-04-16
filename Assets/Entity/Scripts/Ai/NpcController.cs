@@ -28,6 +28,7 @@ namespace Entity.Scripts.Ai
         private const string IS_WALKING = "IsWalking";
         private static readonly int IsWalking = Animator.StringToHash(IS_WALKING);
 
+        [SerializeField]
         private float sped;
         void Start()	{
             
@@ -37,7 +38,7 @@ namespace Entity.Scripts.Ai
             _NpcRadar.Initialize(_NpcDefinition._SuspicionIncrease, _NpcDefinition.SusIncreaseSpeed);
             _NavMeshAgent.speed *= _NpcDefinition._SpeedMultiplier;
             _NpcRadar.SignalPlayerInRange.AddListener(PlayerInRange);
-            sped = _NavMeshAgent.speed;
+            //sped = _NavMeshAgent.speed;
         }
 
         private void OnDestroy()

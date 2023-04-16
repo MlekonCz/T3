@@ -77,10 +77,11 @@ namespace Entity.Scripts.Ai
                 {
                     if (!sentSignal)
                     {
+                        sentSignal = true;
+                        Game.Instance.PlayerManager.SetSign(true,Signs.Warning);
                         SignalPlayerInRange.Dispatch(true);
                     }
                     Game.Instance.GameManager.AddSuspicion(_suspicionIncrease);
-                    Game.Instance.PlayerManager.SetSign(true,Signs.Warning);
                 }
 
                 else if (hit.collider != null && hit.collider.CompareTag(TagManager.ITEM))
@@ -116,7 +117,9 @@ namespace Entity.Scripts.Ai
             {
                 if (sentSignal)
                 {
+                    sentSignal = false;
                     SignalPlayerInRange.Dispatch(false);
+                    Game.Instance.PlayerManager.SetSign(true,Signs.Warning);
                 }
                 _isInRange = false;
                 _player = null;
