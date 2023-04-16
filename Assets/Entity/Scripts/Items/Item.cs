@@ -148,7 +148,11 @@ namespace Entity.Scripts.Items
             }
             else if (playerManager.CanPickItem(_ItemTierDefinition))
             {
-                playerManager.SetSign(true,Signs.FeedTheRoomSign);
+                if (_ItemTierDefinition.Tier == 1)
+                {
+                    playerManager.SetSign(true,Signs.FeedTheRoomSign);
+                    
+                }
                 playerManager.CurrentPickable = this;
                 OnPickedUp();
             }

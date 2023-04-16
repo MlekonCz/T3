@@ -21,6 +21,7 @@ namespace Entity.Scripts.Hand
         [SerializeField] private GameObject _CanvasRotator;
         public HandSignManager HandSignManager => _HandSignManager;
 
+        [SerializeField] private GameObject audio;
         
         private const string IS_WALKING = "IsWalking";
         private static readonly int IsWalking = Animator.StringToHash(IS_WALKING);
@@ -112,6 +113,15 @@ namespace Entity.Scripts.Hand
             //transform.Rotate(0,0,moveHorizontal * _RotationSpeed * Time.deltaTime);
             _movement = new Vector2(moveVertical,0 ).normalized;
            // Debug.Log(_movement.magnitude);
+
+           if (audio.activeInHierarchy && _movement.magnitude == 0)
+           {
+               audio.SetActive(false);
+           }
+           if (!audio.activeInHierarchy && _movement.magnitude > 0)
+           {
+               audio.SetActive(true);
+           }
             _Animator.SetBool(IsWalking,_movement.magnitude > 0);
         }
         void FixedUpdate()

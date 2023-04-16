@@ -54,7 +54,8 @@ namespace Entity.Scripts.Hand
             if (!col.gameObject.CompareTag(TagManager.PLAYER)) return;
 
             Game.Instance.PlayerManager.SetSign(Game.Instance.PlayerManager.CurrentPickable != null, Signs.FeedSign);
-                
+            Game.Instance.PlayerManager.SetSign(false, Signs.FeedTheRoomSign);
+
             Game.Instance.PlayerManager.OnInteractionKeyPressed.AddListener(OnInteraction);
             
         }
@@ -78,7 +79,6 @@ namespace Entity.Scripts.Hand
             Game.Instance.PlayerManager.SetSign(false,Signs.FeedSign);
 
             Game.Instance.PlayerManager.CurrentPickable = null;
-            Game.Instance.PlayerManager.SetSign(false, Signs.FeedTheRoomSign);
 
         }
     }

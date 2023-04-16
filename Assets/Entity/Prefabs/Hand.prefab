@@ -57,6 +57,7 @@ MonoBehaviour:
   _Animator: {fileID: 480252789}
   _HandSignManager: {fileID: 3543924597087386068}
   _CanvasRotator: {fileID: 111285322042220502}
+  audio: {fileID: 4425040847555167886}
 --- !u!114 &3543924597087386068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3177,5 +3178,10 @@ PrefabInstance:
 --- !u!4 &271499097377430457 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2914040949503349734, guid: 0e2d92d7e2514fe46aa9b5fb21788571, type: 3}
+  m_PrefabInstance: {fileID: 3149228009384544351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4425040847555167886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1647377401762352849, guid: 0e2d92d7e2514fe46aa9b5fb21788571, type: 3}
   m_PrefabInstance: {fileID: 3149228009384544351}
   m_PrefabAsset: {fileID: 0}
