@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HandSpeedUpgrade_3
   m_EditorClassIdentifier: 
   _Tier: 4
-  _Cost: 50
+  _Cost: 100
   _Modifier: 1.6
