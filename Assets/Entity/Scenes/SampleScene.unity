@@ -2958,7 +2958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f51dcf8762808674598f807ceb6cb724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _TimeMultiplier: 10
+  _TimeMultiplier: 20
   _MaxSuspicion: 100
 --- !u!1001 &361943493
 PrefabInstance:
@@ -4272,6 +4272,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da1c0aea7b19a842a208bc95a96d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _LayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1001 &483689406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4809,6 +4812,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da1c0aea7b19a842a208bc95a96d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _LayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1001 &524697890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6462,6 +6468,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da1c0aea7b19a842a208bc95a96d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _LayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &681539836
 GameObject:
   m_ObjectHideFlags: 0
@@ -10062,6 +10071,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da1c0aea7b19a842a208bc95a96d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _LayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1096215024
 GameObject:
   m_ObjectHideFlags: 0
@@ -11684,6 +11696,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da1c0aea7b19a842a208bc95a96d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _LayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1340533209
 GameObject:
   m_ObjectHideFlags: 0
@@ -13477,7 +13492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c9a57a48b14366bb518b855863957c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PlayerScore: 5
+  _PlayerScore: 0
 --- !u!1 &1637998860
 GameObject:
   m_ObjectHideFlags: 0
@@ -15036,6 +15051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d40d15f90618741409fb97f755c9bb9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _SliderImage: {fileID: 0}
 --- !u!1 &1847835665
 GameObject:
   m_ObjectHideFlags: 0
