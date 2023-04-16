@@ -1,18 +1,51 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using Entity.Scripts.Hand;
+using Entity.Scripts.Utilities;
 using UnityEngine;
 
-public class NpcRadar : MonoBehaviour
+namespace Entity.Scripts.Ai
 {
-    // Start is called before the first frame update
-    void Start()
+    public class NpcRadar : MonoBehaviour
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private float _tickSpeed;
+        private bool _isInRange;
+
+        private float _time = Mathf.Infinity;
+
+        private float _suspicionIncrease;
+        private void Update()
+        {
+            if (_isInRange && _time >= _tickSpeed)
+            {
+                _time = 0;
+                Game.Instance.GameManager.AddSuspicion(_suspicionIncrease);
+            }
+
+            _time += Time.deltaTime;
+        }
+
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.gameObject.CompareTag(TagManager.PLAYER))
+            {
+                _isInRange = true;
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            if (other.gameObject.CompareTag(TagManager.PLAYER))
+            {
+                _isInRange = false;
+
+            }
+        }
+
+        public void Initialize(float suspicionIncrease, float tickSpeed)
+        {
+            _suspicionIncrease = suspicionIncrease;
+            _tickSpeed = tickSpeed;
+        }
     }
 }

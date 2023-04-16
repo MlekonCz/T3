@@ -156,6 +156,8 @@ MonoBehaviour:
   _NavMeshAgent: {fileID: 10284407}
   _WaypointsDefinition: {fileID: 11400000, guid: cb960287dd1fa5741bdd46c1ed4b6286, type: 2}
   _Animator: {fileID: 152324784}
+  _NpcDefinition: {fileID: 11400000, guid: 650e1e2bc1037214c9c1833e32b6452e, type: 2}
+  _NpcRadar: {fileID: 482476953}
 --- !u!195 &10284407
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -228,6 +230,8 @@ MonoBehaviour:
   _NavMeshAgent: {fileID: 15615788}
   _WaypointsDefinition: {fileID: 11400000, guid: 560bd77440e098142834514d29272c9e, type: 2}
   _Animator: {fileID: 642997183}
+  _NpcDefinition: {fileID: 11400000, guid: 650e1e2bc1037214c9c1833e32b6452e, type: 2}
+  _NpcRadar: {fileID: 524396423}
 --- !u!195 &15615788
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -300,6 +304,8 @@ MonoBehaviour:
   _NavMeshAgent: {fileID: 19393564}
   _WaypointsDefinition: {fileID: 11400000, guid: 476a715debf18d34a9cca97eecac33f0, type: 2}
   _Animator: {fileID: 865351990}
+  _NpcDefinition: {fileID: 11400000, guid: 650e1e2bc1037214c9c1833e32b6452e, type: 2}
+  _NpcRadar: {fileID: 1330204080}
 --- !u!195 &19393564
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -978,6 +984,8 @@ MonoBehaviour:
   _NavMeshAgent: {fileID: 91291749}
   _WaypointsDefinition: {fileID: 11400000, guid: 01c3608caa084ba49a7eefe0a65bcbac, type: 2}
   _Animator: {fileID: 136159709}
+  _NpcDefinition: {fileID: 11400000, guid: 650e1e2bc1037214c9c1833e32b6452e, type: 2}
+  _NpcRadar: {fileID: 674572379}
 --- !u!195 &91291749
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2725,6 +2733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _TimeMultiplier: 10
+  _MaxSuspicion: 100
 --- !u!1 &364892333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3814,6 +3823,7 @@ GameObject:
   - component: {fileID: 482476950}
   - component: {fileID: 482476951}
   - component: {fileID: 482476952}
+  - component: {fileID: 482476953}
   m_Layer: 9
   m_Name: Triangle
   m_TagString: Untagged
@@ -3925,6 +3935,19 @@ PolygonCollider2D:
       - {x: 2.5500033, y: -3.5622628}
       - {x: 5.1186366, y: -2.012566}
       - {x: 3.0117803, y: 0.55538106}
+--- !u!114 &482476953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482476949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da1c0aea7b19a842a208bc95a96d17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TickSpeed: 0.25
 --- !u!1001 &483689406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4471,6 +4494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da1c0aea7b19a842a208bc95a96d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _TickSpeed: 0.25
 --- !u!1 &535267618
 GameObject:
   m_ObjectHideFlags: 0
@@ -5810,6 +5834,7 @@ GameObject:
   - component: {fileID: 674572376}
   - component: {fileID: 674572378}
   - component: {fileID: 674572377}
+  - component: {fileID: 674572379}
   m_Layer: 9
   m_Name: Triangle (2)
   m_TagString: Untagged
@@ -5925,6 +5950,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &674572379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674572375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da1c0aea7b19a842a208bc95a96d17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TickSpeed: 0.25
 --- !u!1 &681539836
 GameObject:
   m_ObjectHideFlags: 0
@@ -9244,6 +9282,7 @@ GameObject:
   - component: {fileID: 1079708304}
   - component: {fileID: 1079708306}
   - component: {fileID: 1079708305}
+  - component: {fileID: 1079708307}
   m_Layer: 9
   m_Name: Triangle (2)
   m_TagString: Untagged
@@ -9359,6 +9398,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1079708307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079708303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da1c0aea7b19a842a208bc95a96d17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TickSpeed: 0.25
 --- !u!1 &1096215024
 GameObject:
   m_ObjectHideFlags: 0
@@ -9945,6 +9997,8 @@ MonoBehaviour:
   _NavMeshAgent: {fileID: 1191855509}
   _WaypointsDefinition: {fileID: 11400000, guid: 59228460b4ceb9044b98807d32b7266c, type: 2}
   _Animator: {fileID: 168728254}
+  _NpcDefinition: {fileID: 11400000, guid: 650e1e2bc1037214c9c1833e32b6452e, type: 2}
+  _NpcRadar: {fileID: 1079708307}
 --- !u!195 &1191855509
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10749,6 +10803,7 @@ GameObject:
   - component: {fileID: 1330204077}
   - component: {fileID: 1330204079}
   - component: {fileID: 1330204078}
+  - component: {fileID: 1330204080}
   m_Layer: 9
   m_Name: Triangle (1)
   m_TagString: Untagged
@@ -10859,6 +10914,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1330204080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330204076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da1c0aea7b19a842a208bc95a96d17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TickSpeed: 0.25
 --- !u!1 &1340533209
 GameObject:
   m_ObjectHideFlags: 0
@@ -15551,6 +15619,10 @@ PrefabInstance:
     - target: {fileID: 2914040949503349734, guid: 0e2d92d7e2514fe46aa9b5fb21788571, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864704768515453705, guid: 0e2d92d7e2514fe46aa9b5fb21788571, type: 3}
+      propertyPath: Loop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e2d92d7e2514fe46aa9b5fb21788571, type: 3}

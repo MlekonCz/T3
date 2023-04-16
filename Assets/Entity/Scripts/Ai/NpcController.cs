@@ -14,6 +14,10 @@ namespace Entity.Scripts.Ai
 
         [SerializeField] private Animator _Animator;
 
+        [SerializeField] private NpcDefinition _NpcDefinition;
+
+        [SerializeField] private NpcRadar _NpcRadar;
+        
         private WaypointConfig _currentWaypoint;
 
         private float _waypointDuration;
@@ -28,6 +32,8 @@ namespace Entity.Scripts.Ai
             _NavMeshAgent.updateRotation = false;
             _NavMeshAgent.updateUpAxis = false;
             _NavMeshAgent.destination = GetRandomWaypoint();
+            _NpcRadar.Initialize(_NpcDefinition._SuspicionIncrease, _NpcDefinition.SusIncreaseSpeed);
+            _NavMeshAgent.speed *= _NpcDefinition._SpeedMultiplier;
         }
 
         private Vector3 GetRandomWaypoint()
