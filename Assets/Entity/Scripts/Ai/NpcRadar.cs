@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Entity.Scripts.Hand;
 using Entity.Scripts.Utilities;
+using strange.extensions.signal.impl;
 using UnityEngine;
 
 namespace Entity.Scripts.Ai
@@ -24,6 +25,9 @@ namespace Entity.Scripts.Ai
 
         private List<Transform> _items = new List<Transform>();
 
+        public Signal<bool> SignalPlayerInRange = new Signal<bool>();
+
+        private bool sentSignal;
         private void Update()
         {
             CheckForPlayer();
@@ -71,8 +75,19 @@ namespace Entity.Scripts.Ai
 
                 if (hit.collider != null && hit.collider.CompareTag(TagManager.PLAYER))
                 {
+                    if (!sentSignal)
+                    {
+                        SignalPlayerInRange.Dispatch(true);
+                    }
                     Game.Instance.GameManager.AddSuspicion(_suspicionIncrease);
                     Game.Instance.PlayerManager.SetSign(true,Signs.Warning);
+                }
+
+                else if (hit.collider != null && hit.collider.CompareTag(TagManager.ITEM))
+                {
+                    Debug.Log("item is missing");
+                    hit.collider.gameObject.TryGetComponent<IPickable>(out var pickable);
+                    Game.Instance.GameManager.AddSuspicion(pickable.GetItemTierDefinition().SusIncrease);
                 }
             }
         }
@@ -99,8 +114,20 @@ namespace Entity.Scripts.Ai
         {
             if (other.gameObject.CompareTag(TagManager.PLAYER))
             {
+                if (sentSignal)
+                {
+                    SignalPlayerInRange.Dispatch(false);
+                }
                 _isInRange = false;
                 _player = null;
+            }
+            if (other.gameObject.CompareTag(TagManager.ITEM))
+            {
+                if (_items.Contains(other.transform))
+                {
+                    _items.Remove(other.transform);
+                }
+
                 Game.Instance.PlayerManager.SetSign(false,Signs.Warning);
 
             }
@@ -111,6 +138,7 @@ namespace Entity.Scripts.Ai
                     _items.Remove(other.transform.parent);
                 }
 
+                _isItemInRange = _items.Count > 0;
                 _isItemInRange = _items.Count > 0;
             }
         }

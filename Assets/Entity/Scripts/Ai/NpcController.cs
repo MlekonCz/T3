@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using DG.Tweening;
 using UnityEngine;
@@ -26,7 +27,8 @@ namespace Entity.Scripts.Ai
 
         private const string IS_WALKING = "IsWalking";
         private static readonly int IsWalking = Animator.StringToHash(IS_WALKING);
-        
+
+        private float sped;
         void Start()	{
             
             _NavMeshAgent.updateRotation = false;
@@ -34,6 +36,21 @@ namespace Entity.Scripts.Ai
             _NavMeshAgent.destination = GetRandomWaypoint();
             _NpcRadar.Initialize(_NpcDefinition._SuspicionIncrease, _NpcDefinition.SusIncreaseSpeed);
             _NavMeshAgent.speed *= _NpcDefinition._SpeedMultiplier;
+            _NpcRadar.SignalPlayerInRange.AddListener(PlayerInRange);
+            sped = _NavMeshAgent.speed;
+        }
+
+        private void OnDestroy()
+        {
+            
+            _NpcRadar.SignalPlayerInRange.RemoveListener(PlayerInRange);
+
+        }
+
+        private void PlayerInRange(bool obj)
+        {
+            _NavMeshAgent.speed = obj ? 0.01f : sped;
+
         }
 
         private Vector3 GetRandomWaypoint()
