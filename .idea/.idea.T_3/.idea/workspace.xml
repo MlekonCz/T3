@@ -17,6 +17,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Entity/Scripts/UI/SuspicionSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Entity/Scripts/Utilities/AudioParent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Extensions/NavMeshPlus/NavMeshComponents/Scripts/NavMeshBuilder2d.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Goal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Intro.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,10 +71,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3444">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="23092">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="3444" />
+      <option name="pid" value="23092" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -93,7 +95,8 @@
       <workItem from="1681575164670" duration="17308000" />
       <workItem from="1681596165546" duration="7962000" />
       <workItem from="1681626835889" duration="16488000" />
-      <workItem from="1681646044256" duration="6240000" />
+      <workItem from="1681646044256" duration="10773000" />
+      <workItem from="1681659878925" duration="285000" />
     </task>
     <servers />
   </component>
@@ -116,77 +119,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Items/Item.cs</url>
-          <line>105</line>
-          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Items\Item.cs" initialLine="104" containingFunctionPresentation="method 'IsMissing'">
-            <startOffsets>
-              <option value="2921" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2939" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/NpcRadar.cs</url>
-          <line>39</line>
-          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Ai\NpcRadar.cs" initialLine="39" containingFunctionPresentation="method 'CheckForItem'">
-            <startOffsets>
-              <option value="907" />
-            </startOffsets>
-            <endOffsets>
-              <option value="921" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/NpcRadar.cs</url>
-          <line>86</line>
-          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Ai\NpcRadar.cs" initialLine="93" containingFunctionPresentation="method 'OnTriggerEnter2D'">
-            <startOffsets>
-              <option value="2627" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2693" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/NpcRadar.cs</url>
-          <line>103</line>
-          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Ai\NpcRadar.cs" initialLine="103" containingFunctionPresentation="method 'OnTriggerExit2D'">
-            <startOffsets>
-              <option value="3303" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3304" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/NpcRadar.cs</url>
-          <line>102</line>
-          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Ai\NpcRadar.cs" initialLine="102" containingFunctionPresentation="method 'OnTriggerExit2D'">
-            <startOffsets>
-              <option value="3201" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3290" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

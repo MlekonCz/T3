@@ -78,7 +78,7 @@ namespace Entity.Scripts.Hand
             Game.Instance.PlayerManager.SetSign(false,Signs.FeedSign);
 
             Game.Instance.PlayerManager.CurrentPickable = null;
-            Game.Instance.PlayerManager.SetSign(false, Signs.FeedSign);
+            Game.Instance.PlayerManager.SetSign(false, Signs.FeedTheRoomSign);
 
         }
     }

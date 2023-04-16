@@ -14,13 +14,13 @@ public class Goal : MonoBehaviour
 
    private void Start()
    {
-      test.text = "Victory in" + $"{Game.Instance.ScoreManager.LifetimeScore + "/" + "80"}";
+      test.text = "Victory in " + $"{Game.Instance.ScoreManager.LifetimeScore + "/" + "80"}";
       Game.Instance.ScoreManager.OnCurrencyChanged.AddListener(OnCurrency);
    }
 
    private void OnCurrency()
    {
-      test.text = "Victory in" + $"{Game.Instance.ScoreManager.LifetimeScore + "/" + "80"}";
+      test.text = "Victory in " + $"{Game.Instance.ScoreManager.LifetimeScore + "/" + "80"}";
 
       if (Game.Instance.ScoreManager.LifetimeScore > 80)
       {
