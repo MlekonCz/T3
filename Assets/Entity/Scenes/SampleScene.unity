@@ -5509,7 +5509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: the
+  m_text: Feed the ROOM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d356ef2c4662aa444953453e37460546, type: 2}
   m_sharedMaterial: {fileID: -6791650110133547347, guid: d356ef2c4662aa444953453e37460546, type: 2}
@@ -12336,7 +12336,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Feed
+  m_text: The room is hungry
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d356ef2c4662aa444953453e37460546, type: 2}
   m_sharedMaterial: {fileID: -6791650110133547347, guid: d356ef2c4662aa444953453e37460546, type: 2}
@@ -14376,7 +14376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ROOM
+  m_text: Avoid suspicion
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d356ef2c4662aa444953453e37460546, type: 2}
   m_sharedMaterial: {fileID: -6791650110133547347, guid: d356ef2c4662aa444953453e37460546, type: 2}
