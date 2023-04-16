@@ -15,6 +15,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Entity/Scripts/Hand/Definitions/AHandUpgradeDefinition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Entity/Scripts/UI/HungerPointCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Entity/Scripts/UI/SuspicionSlider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Entity/Scripts/Utilities/AudioParent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Extensions/NavMeshPlus/NavMeshComponents/Scripts/NavMeshBuilder2d.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -90,7 +91,7 @@
       <workItem from="1681548630533" duration="14276000" />
       <workItem from="1681575164670" duration="17308000" />
       <workItem from="1681596165546" duration="7962000" />
-      <workItem from="1681626835889" duration="13989000" />
+      <workItem from="1681626835889" duration="14608000" />
     </task>
     <servers />
   </component>
@@ -113,25 +114,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/NpcManager.cs</url>
-          <line>40</line>
-          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Ai\NpcManager.cs" initialLine="39" containingFunctionPresentation="method 'GetWaypoint'">
-            <startOffsets>
-              <option value="1324" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1349" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

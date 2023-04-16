@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3543924597087386068}
   - component: {fileID: 7130589153907183317}
   - component: {fileID: 81211869297520160}
+  - component: {fileID: 8786664306377734612}
   m_Layer: 7
   m_Name: Hand
   m_TagString: Player
@@ -111,6 +112,14 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!81 &8786664306377734612
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81211869297520172}
+  m_Enabled: 1
 --- !u!1 &111285322042220502
 GameObject:
   m_ObjectHideFlags: 0
