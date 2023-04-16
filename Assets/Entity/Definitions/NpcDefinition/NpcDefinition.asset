@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: NpcDefinition
   m_EditorClassIdentifier: 
   _SuspicionIncrease: 1
-  _SpeedMultiplier: 1
+  _SpeedMultiplier: 0.8
   _SusIncreaseSpeed: 0.5
