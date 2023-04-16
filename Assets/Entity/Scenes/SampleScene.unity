@@ -9818,7 +9818,7 @@ Transform:
   m_GameObject: {fileID: 1008370718}
   m_LocalRotation: {x: 0.36775607, y: 0.3473808, z: -0.6270756, w: -0.5923329}
   m_LocalPosition: {x: 0.234, y: 0.013, z: -0.067}
-  m_LocalScale: {x: 0.13, y: 0.18218541, z: 0.008868181}
+  m_LocalScale: {x: 0.13260487, y: 0.17799346, z: 0.027249716}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1243519134}
@@ -9958,13 +9958,13 @@ MonoBehaviour:
   autoGenerate: 1
   isActive: 1
   isValid: 1
-  target: {fileID: 1008370720}
-  animationType: 6
-  targetType: 7
+  target: {fileID: 1008370719}
+  animationType: 5
+  targetType: 11
   forcedTargetType: 0
   autoPlay: 1
   useTargetAsV3: 0
-  endValueFloat: 0
+  endValueFloat: 0.15
   endValueV3: {x: 0, y: 0, z: 0}
   endValueV2: {x: 0, y: 0}
   endValueColor: {r: 0, g: 0, b: 0, a: 0.59607846}
@@ -9976,7 +9976,7 @@ MonoBehaviour:
     width: 0
     height: 0
   endValueTransform: {fileID: 0}
-  optionalBool0: 0
+  optionalBool0: 1
   optionalBool1: 0
   optionalFloat0: 0
   optionalInt0: 0
