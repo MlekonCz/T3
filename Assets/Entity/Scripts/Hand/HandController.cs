@@ -16,6 +16,7 @@ namespace Entity.Scripts.Hand
 
         [SerializeField] private HandSignManager _HandSignManager;
 
+        [SerializeField] private GameObject _CanvasRotator;
         public HandSignManager HandSignManager => _HandSignManager;
 
         
@@ -45,7 +46,16 @@ namespace Entity.Scripts.Hand
         private void Update()
         {
             UpdateMovement();
-           // CheckForPickingItemUp();
+            
+            // Calculate the opposite rotation of the player
+            //Quaternion oppositeRotation = Quaternion.Euler(0, 0, -transform.rotation.eulerAngles.z / 2);
+
+            // Apply the opposite rotation to the canvas
+            //_CanvasRotator.transform.rotation = oppositeRotation;
+            
+            
+            _CanvasRotator.transform.rotation = new Quaternion(0,0, - transform.rotation.eulerAngles.z,0);
+            // CheckForPickingItemUp();
         }
 
         

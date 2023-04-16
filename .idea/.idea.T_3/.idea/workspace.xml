@@ -65,10 +65,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3304">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3444">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="3304" />
+      <option name="pid" value="3444" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -87,7 +87,8 @@
       <workItem from="1681498568428" duration="15131000" />
       <workItem from="1681548630533" duration="14276000" />
       <workItem from="1681575164670" duration="17308000" />
-      <workItem from="1681596165546" duration="7324000" />
+      <workItem from="1681596165546" duration="7962000" />
+      <workItem from="1681626835889" duration="2512000" />
     </task>
     <servers />
   </component>
@@ -110,6 +111,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Hand/UpgradePot.cs</url>
+          <line>39</line>
+          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Hand\UpgradePot.cs" initialLine="39" containingFunctionPresentation="method 'OnInteraction'">
+            <startOffsets>
+              <option value="1199" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1285" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -39,13 +39,6 @@ namespace Entity.Scripts.Ai
             if (_Animator)
             {
                 _Animator.SetBool(IsWalking,!_isAtDestination);
-                
-                float angle = Mathf.Atan2(_NavMeshAgent.velocity.y, _NavMeshAgent.velocity.x);
-
-                float degrees = angle * Mathf.Rad2Deg;
-
-                transform.rotation = Quaternion.Euler(0, 0, degrees);
-             //   _Animator.gameObject.transform.LookAt(test);
             }
 
             
@@ -53,6 +46,15 @@ namespace Entity.Scripts.Ai
             {
                 _isAtDestination = true;
                 Invoke(nameof(SetNewDestination),_waypointDuration * Game.Instance.GameManager.TimeMultiplier);
+            }
+
+            if (!_isAtDestination && _Animator)
+            {
+                float angle = Mathf.Atan2(_NavMeshAgent.velocity.y, _NavMeshAgent.velocity.x);
+
+                float degrees = angle * Mathf.Rad2Deg;
+
+                transform.rotation = Quaternion.Euler(0, 0, degrees);
             }
         }
 
