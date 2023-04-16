@@ -1,11 +1,10 @@
 using System;
-using System.Collections.Generic;
 using DG.Tweening;
-using Entity.Scripts.Hand.Definitions;
 using Entity.Scripts.Items;
 using Entity.Scripts.Utilities;
 using strange.extensions.signal.impl;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Entity.Scripts.Hand
 {
@@ -17,14 +16,25 @@ namespace Entity.Scripts.Hand
 
         [SerializeField] private FakeItem _FakeItem;
 
+        [SerializeField] private Image _SliderImage;
+
         private IPickable _craftedItem;
         public Signal<float> OnPickableConsumed;
 
-      
+
+        private void Start()
+        {
+            _SliderImage.transform.localScale = new Vector3(0, 1, 1);
+        }
+
         private void CraftFakeItem(IPickable playerManagerCurrentPickable)
         {
             if (playerManagerCurrentPickable.GetItemTierDefinition().Tier is not (2 or 3)) return;
             _craftedItem = playerManagerCurrentPickable;
+            _SliderImage.transform.parent.gameObject.SetActive(true);
+            
+            _SliderImage.transform.localScale = new Vector3(0, 1, 1);
+            _SliderImage.transform.DOScaleX(1, playerManagerCurrentPickable.GetItemTierDefinition().CopyCreationTime);
             Invoke(nameof(BuildItem), playerManagerCurrentPickable.GetItemTierDefinition().CopyCreationTime);
         }
 
@@ -33,6 +43,9 @@ namespace Entity.Scripts.Hand
             var item = Instantiate(_FakeItem, _SpawnPosition);
             item.transform.localPosition = Vector3.zero;
             item.SetFakeItem(_craftedItem.GetItemCopy(), _craftedItem);
+            _SliderImage.transform.localScale = new Vector3(1, 1, 1);
+            _SliderImage.transform.parent.gameObject.SetActive(false);
+
         }
         
         private void OnTriggerEnter2D(Collider2D col)
