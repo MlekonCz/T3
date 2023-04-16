@@ -23,13 +23,14 @@ namespace Entity.Scripts.Hand
 
         
         public Signal OnInteractionKeyPressed = new Signal();
+        public Signal<List<AHandUpgradeDefinition>> SignalOnPlayerUpgraded = new Signal<List<AHandUpgradeDefinition>>();
+        
+        public IPickable CurrentFakeItem;
 
         private void Awake()
         {
             UpdateCurrentUpgrades();
-
-
-            SetHand();
+            
         }
 
         private void UpdateCurrentUpgrades()
@@ -40,21 +41,8 @@ namespace Entity.Scripts.Hand
             _currentUpgrades.Add(_HandVisionUpgrade[_upgradeLevel]);
         }
 
-        private void SetHand()
-        {
-            foreach (var upgrade in CurrentUpgrades())
-            {
-                if (upgrade is HandSpeedUpgrade speedUpgrade)
-                {
-                    _HandController.SetModifiers(speedUpgrade);
-                }
-            }
-        }
-
-        public void SetItemInRange(ItemTierDefinition itemTierDefinition, bool isInRange, Signs sign)
-        {
-            _HandController.HandSignManager.SetSign(sign, isInRange && itemTierDefinition.Tier <= _upgradeLevel);
-        }
+       
+        
         
         public void SetSign(bool isActive, Signs sign)
         {
@@ -85,12 +73,12 @@ namespace Entity.Scripts.Hand
         {
             _upgradeLevel++;
             UpdateCurrentUpgrades();
-            SetHand();
+            SignalOnPlayerUpgraded.Dispatch(_currentUpgrades);
         }
 
         public bool CanPickItem(ItemTierDefinition itemTierDefinition)
         {
-            return itemTierDefinition.Tier <= _upgradeLevel;
+            return CurrentPickable == null && CurrentFakeItem == null && itemTierDefinition.Tier <= CurrentUpgrades()[0].Tier;
         }
     }
 }

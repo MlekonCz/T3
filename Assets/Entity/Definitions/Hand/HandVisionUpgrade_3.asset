@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc00655660af459f841948e950ce297b, type: 3}
   m_Name: HandVisionUpgrade_3
   m_EditorClassIdentifier: 
-  _Tier: 3
+  _Tier: 4
   _Cost: 50
   _Modifier: 1.6
