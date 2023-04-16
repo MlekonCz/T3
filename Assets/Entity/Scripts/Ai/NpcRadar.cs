@@ -63,6 +63,7 @@ namespace Entity.Scripts.Ai
         {
             if (_isInRange && _time >= _tickSpeed)
             {
+
                 _time = 0;
 
                 Vector3 direction = _player.position - transform.position;
@@ -71,6 +72,7 @@ namespace Entity.Scripts.Ai
                 if (hit.collider != null && hit.collider.CompareTag(TagManager.PLAYER))
                 {
                     Game.Instance.GameManager.AddSuspicion(_suspicionIncrease);
+                    Game.Instance.PlayerManager.SetSign(true,Signs.Warning);
                 }
             }
         }
@@ -99,6 +101,8 @@ namespace Entity.Scripts.Ai
             {
                 _isInRange = false;
                 _player = null;
+                Game.Instance.PlayerManager.SetSign(false,Signs.Warning);
+
             }
             else if (other.transform.parent != null && other.transform.parent.CompareTag(TagManager.ITEM))
             {

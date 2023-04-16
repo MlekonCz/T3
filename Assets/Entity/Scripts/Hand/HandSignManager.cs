@@ -13,6 +13,7 @@ namespace Entity.Scripts.Hand
         [SerializeField] private GameObject _ReplaceSign;
         
         [SerializeField] private GameObject _UpgradeSign;
+        [SerializeField] private GameObject _Warning;
 
 
         public void SetSign(Signs sign, bool isActive)
@@ -40,6 +41,9 @@ namespace Entity.Scripts.Hand
                 case Signs.UpgradeSign:
                     _UpgradeSign.SetActive(isActive);
                     break;
+                case Signs.Warning:
+                    _Warning.SetActive(isActive);
+                    break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(sign), sign, null);
             }
@@ -54,6 +58,7 @@ namespace Entity.Scripts.Hand
         PickUpSign,
         ReplaceTheItemSign,
         ReplaceSign,
-        UpgradeSign
+        UpgradeSign,
+        Warning
     }
 }

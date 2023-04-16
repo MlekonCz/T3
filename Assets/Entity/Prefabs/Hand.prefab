@@ -76,6 +76,7 @@ MonoBehaviour:
   _ReplaceTheItemSign: {fileID: 6905888568004558103}
   _ReplaceSign: {fileID: 6091666404673632217}
   _UpgradeSign: {fileID: 1990506498689653940}
+  _Warning: {fileID: 2437684163763727077}
 --- !u!58 &7130589153907183317
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1338,7 +1339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
