@@ -72,7 +72,7 @@ MonoBehaviour:
     TranformForEditor: {fileID: 0}
   - Name: '23_stol '
     Position: {x: 18.15, y: 43.7, z: -10.010139}
-    Weight: 1
+    Weight: 0
     Duration: 2
     DayTime: 18
     TranformForEditor: {fileID: 0}
@@ -150,7 +150,7 @@ MonoBehaviour:
     TranformForEditor: {fileID: 0}
   - Name: '56_vychadzka '
     Position: {x: -11.1, y: 62.4, z: -10.010139}
-    Weight: 1
+    Weight: 0
     Duration: 13
     DayTime: 20
     TranformForEditor: {fileID: 0}
