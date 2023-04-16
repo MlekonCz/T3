@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using Entity.Scripts.Hand.Definitions;
 using strange.extensions.signal.impl;
 using UnityEngine;
@@ -32,12 +34,43 @@ namespace Entity.Scripts.Hand
         private float _multipliedSpeed;
         private float _multipliedRotation;
 
+
+        private void Awake()
+        {
+            Game.Instance.PlayerManager.SignalOnPlayerUpgraded.AddListener(OnUpgradeCompleted);
+        }
+        private void OnDestroy()
+        {
+            
+            Game.Instance.PlayerManager.SignalOnPlayerUpgraded.RemoveListener(OnUpgradeCompleted);
+
+        }
+
         private void Start()
         {
             
+            foreach (var upgrade in Game.Instance.PlayerManager.CurrentUpgrades())
+            {
+                if (upgrade is HandSpeedUpgrade speedUpg)
+                {
+                    SetModifiers(speedUpg);
+                }
+            }
         }
 
-        public void SetModifiers(HandSpeedUpgrade handSpeedUpgrade)
+        
+        private void OnUpgradeCompleted(List<AHandUpgradeDefinition> obj)
+        {
+            foreach (var upgrade in Game.Instance.PlayerManager.CurrentUpgrades())
+            {
+                if (upgrade is HandSpeedUpgrade speedUpg)
+                {
+                    SetModifiers(speedUpg);
+                }
+            }
+        }
+        
+        private void SetModifiers(HandSpeedUpgrade handSpeedUpgrade)
         {
             _multipliedSpeed = _MovementSpeed * handSpeedUpgrade.Modifier;
             _multipliedRotation = _RotationSpeed * handSpeedUpgrade.Modifier;

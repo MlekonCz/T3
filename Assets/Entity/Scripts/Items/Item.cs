@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using Entity.Scripts.Hand;
+using Entity.Scripts.Hand.Definitions;
 using Entity.Scripts.Utilities;
 using UnityEngine;
 
@@ -23,6 +26,28 @@ namespace Entity.Scripts.Items
         private void Awake()
         {
             _originalColor = _ItemImage.color;
+            Game.Instance.PlayerManager.SignalOnPlayerUpgraded.AddListener(OnUpgradeCompleted);
+
+        }
+
+        private void Start()
+        {
+            if (_ItemTierDefinition.Tier > 1)
+            {
+                
+            }
+            _GlowObject.SetActive(_ItemTierDefinition.Tier <= Game.Instance.PlayerManager.CurrentUpgrades()[0].Tier && !_isPickedUp);
+        }
+
+        private void OnDestroy()
+        {
+            Game.Instance.PlayerManager.SignalOnPlayerUpgraded.RemoveListener(OnUpgradeCompleted);
+
+        }
+
+        private void OnUpgradeCompleted(List<AHandUpgradeDefinition> obj)
+        {
+            _GlowObject.SetActive(_ItemTierDefinition.Tier <= obj[0].Tier && !_isPickedUp);
         }
 
         public ItemTierDefinition GetItemTierDefinition()
@@ -30,11 +55,24 @@ namespace Entity.Scripts.Items
             return _ItemTierDefinition;
         }
 
+        public Sprite GetItemCopy()
+        {
+            return _ReplacementSprite;
+        }
+
         public void OnPickedUp()
         {
+            _isPickedUp = true;
             _ItemImage.color = _PickedUpColor;
-            gameObject.GetComponent<Collider2D>().enabled = false;
+           // gameObject.GetComponent<Collider2D>().enabled = false;
+           Game.Instance.PlayerManager.SetSign(false,Signs.CollectSign);
+
             _GlowObject.SetActive(false);
+
+            if (_ItemTierDefinition.Tier == 1 || _ItemTierDefinition.Tier == 4)
+            {
+                gameObject.SetActive(false);
+            }
         }
 
         public void OnBeingCaught()
@@ -63,8 +101,18 @@ namespace Entity.Scripts.Items
         {
             if (col.gameObject.CompareTag(TagManager.PLAYER))
             {
-                Game.Instance.PlayerManager.SetItemInRange(_ItemTierDefinition, true, _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
-                Game.Instance.PlayerManager.OnInteractionKeyPressed.AddListener(OnInteraction);
+                var playerManager = Game.Instance.PlayerManager;
+                if (ReferenceEquals(playerManager.CurrentFakeItem, this))
+                {
+                    playerManager.SetSign(true,Signs.ReplaceSign);
+                    playerManager.OnInteractionKeyPressed.AddListener(OnInteraction);
+                }
+                else if (playerManager.CanPickItem(_ItemTierDefinition))
+                {
+                    playerManager.SetSign(true,Signs.CollectSign);
+                    playerManager.OnInteractionKeyPressed.AddListener(OnInteraction);
+                }
+              
             }
         }
 
@@ -73,9 +121,10 @@ namespace Entity.Scripts.Items
         {
             if (other.gameObject.CompareTag(TagManager.PLAYER))
             {
-                Game.Instance.PlayerManager.SetItemInRange(_ItemTierDefinition, false,  _isPickedUp ? Signs.ReplaceSign : Signs.CollectSign);
-                Game.Instance.PlayerManager.OnInteractionKeyPressed.RemoveListener(OnInteraction);
-
+                var playerManager = Game.Instance.PlayerManager;
+                playerManager.SetSign(false,Signs.ReplaceSign);
+                playerManager.SetSign(false,Signs.CollectSign);
+                playerManager.OnInteractionKeyPressed.RemoveListener(OnInteraction);
             }
             
         }
@@ -83,11 +132,17 @@ namespace Entity.Scripts.Items
         private void OnInteraction()
         {
             var playerManager = Game.Instance.PlayerManager;
-            if (playerManager.CanPickItem(_ItemTierDefinition))
+            if (ReferenceEquals(playerManager.CurrentFakeItem, this))
+            {
+               OnBeingReplaced();
+               playerManager.CurrentFakeItem = null;
+            }
+            else if (playerManager.CanPickItem(_ItemTierDefinition))
             {
                 playerManager.CurrentPickable = this;
                 OnPickedUp();
             }
+            
             
         }
     }
