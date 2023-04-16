@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Tier: 4
   _Cost: 100
-  _Modifier: 1.6
+  _Modifier: 2
