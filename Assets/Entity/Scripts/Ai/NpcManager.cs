@@ -19,7 +19,8 @@ namespace Entity.Scripts.Ai
             var availableWaypoints = new List<WaypointConfig>();
             foreach (var config in waypointsByWeight)
             {
-                if (_WaypointsDefinition.WaypointConfigs.Find(x => x.Name == config.Name) != null && !_usedWaypoints.Contains(config))
+             if (_WaypointsDefinition.WaypointConfigs.Find(x => x.Name == config.Name) != null && 
+                    _usedWaypoints.Find(x => x.Name == config.Name) == null)
                 {
                     availableWaypoints.Add(config);
                 }
