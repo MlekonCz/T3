@@ -14,6 +14,8 @@ namespace Entity.Scripts.Ai
 
         [SerializeField] private Animator _Animator;
 
+        private WaypointConfig _currentWaypoint;
+
         private float _waypointDuration;
 
         private bool _isAtDestination = false;
@@ -30,7 +32,8 @@ namespace Entity.Scripts.Ai
 
         private Vector3 GetRandomWaypoint()
         {
-            return Game.Instance.NpcManager.GetWaypoint(_WaypointsDefinition.WaypointConfigs, out _waypointDuration);
+            _currentWaypoint = Game.Instance.NpcManager.GetWaypoint(_WaypointsDefinition.WaypointConfigs, out _waypointDuration);
+            return _currentWaypoint.Position;
         }
 
 
@@ -62,6 +65,7 @@ namespace Entity.Scripts.Ai
         {
             _isAtDestination = false;
             _NavMeshAgent.destination =  GetRandomWaypoint();
+            Game.Instance.NpcManager.ReturnWaypoint(_currentWaypoint);
         }
 
     }

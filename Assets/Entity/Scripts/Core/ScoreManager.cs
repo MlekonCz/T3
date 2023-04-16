@@ -1,4 +1,5 @@
 using System;
+using strange.extensions.signal.impl;
 using UnityEngine;
 
 namespace Entity.Scripts.Core
@@ -12,6 +13,7 @@ namespace Entity.Scripts.Core
         [NonSerialized]
         public int LifetimeScore;
 
+        public Signal OnCurrencyChanged = new Signal();
         private void Awake()
         {
             LifetimeScore = _PlayerScore;
@@ -33,12 +35,14 @@ namespace Entity.Scripts.Core
             _PlayerScore += value;
             LifetimeScore += value;
             Debug.Log(_PlayerScore);
+            OnCurrencyChanged.Dispatch();
         }
 
         public void SubtractScore(int value)
         {
             _PlayerScore -= value;
             Debug.Log(_PlayerScore);
+            OnCurrencyChanged.Dispatch();
         }
     }
 }
