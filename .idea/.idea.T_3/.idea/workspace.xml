@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/WaypointsDefinition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Entity/Scripts/Hand/Definitions/AHandUpgradeDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Entity/Scripts/UI/SuspicionSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Extensions/NavMeshPlus/NavMeshComponents/Scripts/NavMeshBuilder2d.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -88,7 +89,7 @@
       <workItem from="1681548630533" duration="14276000" />
       <workItem from="1681575164670" duration="17308000" />
       <workItem from="1681596165546" duration="7962000" />
-      <workItem from="1681626835889" duration="3394000" />
+      <workItem from="1681626835889" duration="4187000" />
     </task>
     <servers />
   </component>
