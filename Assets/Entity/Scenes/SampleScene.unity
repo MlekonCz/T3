@@ -5509,7 +5509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Feed the ROOM
+  m_text: Feed the room
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d356ef2c4662aa444953453e37460546, type: 2}
   m_sharedMaterial: {fileID: -6791650110133547347, guid: d356ef2c4662aa444953453e37460546, type: 2}
@@ -5536,8 +5536,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 600
-  m_fontSizeBase: 600
+  m_fontSize: 300
+  m_fontSizeBase: 300
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12336,7 +12336,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The ROOM is hungry
+  m_text: The room is hungry
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d356ef2c4662aa444953453e37460546, type: 2}
   m_sharedMaterial: {fileID: -6791650110133547347, guid: d356ef2c4662aa444953453e37460546, type: 2}
@@ -12363,8 +12363,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 600
-  m_fontSizeBase: 600
+  m_fontSize: 300
+  m_fontSizeBase: 300
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12399,7 +12399,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -783.56726, y: -508.36328, z: -730.19403, w: -505.19376}
+  m_margin: {x: -783.56726, y: -508.36328, z: -1107.1521, w: -505.19376}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -14352,7 +14352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1599914785
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14420,8 +14420,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 600
-  m_fontSizeBase: 600
+  m_fontSize: 300
+  m_fontSizeBase: 300
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
