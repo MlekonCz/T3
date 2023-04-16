@@ -1,18 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class SuspicionSlider : MonoBehaviour
+namespace Entity.Scripts.UI
 {
-    // Start is called before the first frame update
-    void Start()
+    public class SuspicionSlider : MonoBehaviour
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+
+        [SerializeField] private Image _SliderImage;
+
+        private float _maxSus;
+        private void Start()
+        {
+            var GameManager = Game.Instance.GameManager;
+            GameManager.SignalOnSuspicionChanged.AddListener(OnSusChanged);
+            _maxSus = GameManager.MaxSuspicion;
+            _SliderImage.transform.localScale = new Vector3(1, GameManager.Suspicion / _maxSus, 1);
+
+        }
+
+        private void OnDestroy()
+        {
+            Game.Instance.GameManager.SignalOnSuspicionChanged.RemoveListener(OnSusChanged);
+        }
+
+        private void OnSusChanged(float obj)
+        {
+            _SliderImage.transform.localScale = new Vector3(1, obj / _maxSus, 1);
+
+        }
     }
 }
