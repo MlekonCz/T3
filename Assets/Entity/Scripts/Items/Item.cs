@@ -13,6 +13,9 @@ namespace Entity.Scripts.Items
         [SerializeField] private Color _PickedUpColor;
 
         [SerializeField] private GameObject _GlowObject;
+        
+        [SerializeField]
+        private Sprite 
 
         private bool _isPickedUp;
         
