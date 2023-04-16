@@ -111,7 +111,7 @@ namespace Entity.Scripts.Hand
          
             //transform.Rotate(0,0,moveHorizontal * _RotationSpeed * Time.deltaTime);
             _movement = new Vector2(moveVertical,0 ).normalized;
-            Debug.Log(_movement.magnitude);
+           // Debug.Log(_movement.magnitude);
             _Animator.SetBool(IsWalking,_movement.magnitude > 0);
         }
         void FixedUpdate()

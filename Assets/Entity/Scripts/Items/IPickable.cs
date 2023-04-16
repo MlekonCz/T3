@@ -13,5 +13,7 @@ namespace Entity.Scripts
         
         public void OnBeingReplaced();
 
+        public bool IsMissing();
+
     }
 }

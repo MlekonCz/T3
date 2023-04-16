@@ -20,6 +20,8 @@ namespace Entity.Scripts.Items
         [SerializeField] private Sprite _ReplacementSprite;
 
         private bool _isPickedUp;
+
+        private bool _isMissing = false;
         
         private Color _originalColor;
 
@@ -63,6 +65,7 @@ namespace Entity.Scripts.Items
         public void OnPickedUp()
         {
             _isPickedUp = true;
+            _isMissing = true;
             _ItemImage.color = _PickedUpColor;
            // gameObject.GetComponent<Collider2D>().enabled = false;
            Game.Instance.PlayerManager.SetSign(false,Signs.CollectSign);
@@ -85,6 +88,7 @@ namespace Entity.Scripts.Items
 
         public void OnBeingReplaced()
         {
+            _isMissing = false;
             if (_ReplacementSprite)
             {
                 _ItemImage.color = new Color(1,1,1,0.8f);
@@ -95,6 +99,11 @@ namespace Entity.Scripts.Items
                 _ItemImage.color = new Color(1,0,1,0.8f);
             }
             gameObject.GetComponent<Collider2D>().enabled = false;
+        }
+
+        public bool IsMissing()
+        {
+            return _isMissing;
         }
 
         private void OnTriggerEnter2D(Collider2D col)

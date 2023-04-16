@@ -19,5 +19,9 @@ namespace Entity.Scripts
 
         [SerializeField] private float _CopyCreationTime;
         public float CopyCreationTime => _CopyCreationTime;
+
+        [SerializeField] private float _SusIncrease;
+        public float SusIncrease => _SusIncrease;
+
     }
 }

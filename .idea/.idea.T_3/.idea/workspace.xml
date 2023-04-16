@@ -37,6 +37,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -92,7 +93,7 @@
       <workItem from="1681575164670" duration="17308000" />
       <workItem from="1681596165546" duration="7962000" />
       <workItem from="1681626835889" duration="16488000" />
-      <workItem from="1681646044256" duration="3214000" />
+      <workItem from="1681646044256" duration="6240000" />
     </task>
     <servers />
   </component>
@@ -115,6 +116,77 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Items/Item.cs</url>
+          <line>105</line>
+          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Items\Item.cs" initialLine="104" containingFunctionPresentation="method 'IsMissing'">
+            <startOffsets>
+              <option value="2921" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2939" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/NpcRadar.cs</url>
+          <line>39</line>
+          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Ai\NpcRadar.cs" initialLine="39" containingFunctionPresentation="method 'CheckForItem'">
+            <startOffsets>
+              <option value="907" />
+            </startOffsets>
+            <endOffsets>
+              <option value="921" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/NpcRadar.cs</url>
+          <line>86</line>
+          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Ai\NpcRadar.cs" initialLine="93" containingFunctionPresentation="method 'OnTriggerEnter2D'">
+            <startOffsets>
+              <option value="2627" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2693" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/NpcRadar.cs</url>
+          <line>103</line>
+          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Ai\NpcRadar.cs" initialLine="103" containingFunctionPresentation="method 'OnTriggerExit2D'">
+            <startOffsets>
+              <option value="3303" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3304" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Entity/Scripts/Ai/NpcRadar.cs</url>
+          <line>102</line>
+          <properties documentPath="D:\GameDev\unity\unity 2D\intr_setup\T_3\Assets\Entity\Scripts\Ai\NpcRadar.cs" initialLine="102" containingFunctionPresentation="method 'OnTriggerExit2D'">
+            <startOffsets>
+              <option value="3201" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3290" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
