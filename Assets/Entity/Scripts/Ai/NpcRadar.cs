@@ -7,6 +7,7 @@ namespace Entity.Scripts.Ai
 {
     public class NpcRadar : MonoBehaviour
     {
+        [SerializeField] private LayerMask _LayerMask;
 
         private float _tickSpeed;
         private bool _isInRange;
@@ -14,14 +15,24 @@ namespace Entity.Scripts.Ai
         private float _time = Mathf.Infinity;
 
         private float _suspicionIncrease;
+
+        private Transform _player;
+
         private void Update()
         {
             if (_isInRange && _time >= _tickSpeed)
             {
                 _time = 0;
-                Game.Instance.GameManager.AddSuspicion(_suspicionIncrease);
-            }
 
+                Vector3 direction = _player.position - transform.position;
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, Mathf.Infinity, _LayerMask);
+
+                if (hit.collider != null && hit.collider.CompareTag(TagManager.PLAYER))
+                {
+                    Game.Instance.GameManager.AddSuspicion(_suspicionIncrease);
+                }
+            }
+            
             _time += Time.deltaTime;
         }
 
@@ -29,6 +40,7 @@ namespace Entity.Scripts.Ai
         {
             if (col.gameObject.CompareTag(TagManager.PLAYER))
             {
+                _player = col.transform;
                 _isInRange = true;
             }
         }
@@ -38,7 +50,7 @@ namespace Entity.Scripts.Ai
             if (other.gameObject.CompareTag(TagManager.PLAYER))
             {
                 _isInRange = false;
-
+                _player = null;
             }
         }
 

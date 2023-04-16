@@ -10,7 +10,8 @@ namespace Entity.Scripts.Core
 
         [SerializeField] private float _MaxSuspicion = 100;
         public float MaxSuspicion => _MaxSuspicion;
-        private float _suspicion = 10;
+        private float _suspicion;
+        public float Suspicion => _suspicion;
 
         public Signal<float> SignalOnSuspicionChanged = new Signal<float>();
 
