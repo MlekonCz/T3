@@ -1,5 +1,5 @@
-using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Entity.Scripts.UI
@@ -29,6 +29,10 @@ namespace Entity.Scripts.UI
         {
             _SliderImage.transform.localScale = new Vector3(1, obj / _maxSus, 1);
 
+            if (obj >= _maxSus)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
     }
 }
